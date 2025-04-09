@@ -3,41 +3,22 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-const headerNavItems = [
+const mobileNavItems = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
   { label: 'Events', href: '/events' },
   { label: 'Charities', href: '/charities' },
-  { label: 'Contact', href: '/contact' }
-];
-
-const footerNavItems = [
-  ...headerNavItems,
+  { label: 'Contact', href: '/contact' },
   { label: 'Privacy Policy', href: '/privacy-policy' }
 ];
 
-interface NavigationProps {
-  className?: string;
-  isFooter?: boolean;
-}
-
-export const Navigation = ({
-  className = '',
-  isFooter = false
-}: NavigationProps) => {
+export const MobileNavigation = () => {
   const pathname = usePathname();
-  const items = isFooter ? footerNavItems : headerNavItems;
 
   return (
-    <nav className={`hidden md:block ${className}`}>
-      <ul
-        className={`flex ${
-          isFooter
-            ? 'flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0'
-            : 'space-x-8'
-        }`}
-      >
-        {items.map(item => (
+    <nav className="md:hidden">
+      <ul className="flex flex-col space-y-4">
+        {mobileNavItems.map(item => (
           <li key={item.href}>
             <Link
               href={item.href}
