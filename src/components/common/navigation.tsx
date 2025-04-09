@@ -4,11 +4,11 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 const headerNavItems = [
-  { label: 'Home', href: '/' },
-  { label: 'About', href: '/about' },
-  { label: 'Events', href: '/events' },
-  { label: 'Charities', href: '/charities' },
-  { label: 'Contact', href: '/contact' }
+  { label: 'HOME', href: '/' },
+  { label: 'ABOUT', href: '/about' },
+  { label: 'EVENTS', href: '/events' },
+  { label: 'CHARITIES', href: '/charities' },
+  { label: 'CONTACT', href: '/contact' }
 ];
 
 const footerNavItems = [
@@ -41,7 +41,7 @@ export const Navigation = ({
           <li key={item.href}>
             <Link
               href={item.href}
-              className={`text-sm font-medium transition-colors hover:text-primary ${
+              className={`text-base font-medium transition-colors hover:text-primary ${
                 pathname === item.href ? 'text-primary' : 'text-foreground/60'
               }`}
             >
