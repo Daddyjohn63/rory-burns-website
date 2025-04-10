@@ -10,9 +10,9 @@ export const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-md">
+    <header className="sticky top-0 z-50 w-full border-b bg-black backdrop-blur  shadow-md">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-20 items-center">
+        <div className="flex h-24 items-center">
           <div className="flex items-center">
             <Logo />
           </div>

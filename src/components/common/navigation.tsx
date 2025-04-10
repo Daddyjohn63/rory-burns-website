@@ -41,7 +41,7 @@ export const Navigation = ({
           <li key={item.href}>
             <Link
               href={item.href}
-              className={`text-base font-medium transition-colors hover:text-primary ${
+              className={`text-white font-medium transition-colors hover:text-primary ${
                 pathname === item.href ? 'text-primary' : 'text-foreground/60'
               }`}
             >

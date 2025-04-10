@@ -19,7 +19,7 @@ export const SocialMedia = () => {
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-foreground/60 hover:text-primary transition-colors"
+          className="text-white hover:text-primary transition-colors"
           aria-label={label}
         >
           <Icon className="h-5 w-5" />
