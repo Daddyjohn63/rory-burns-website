@@ -1,11 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { Button } from '../ui/button';
+import { ArrowRight } from 'lucide-react';
 
 export const Hero1 = () => {
   return (
-    <section className="relative overflow-hidden bg-cyan-200">
+    <section className="relative  pt-16 pb-20 overflow-hidden bg-gradient-to-br from-white via-cyan-200/60 to-cyan-300/50">
       <div className="relative isolate">
-        <div
+        {/* <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-x-0 top-0 -z-10 transform-gpu overflow-hidden blur-3xl"
         >
@@ -16,32 +18,38 @@ export const Hero1 = () => {
             }}
             className="relative left-1/4 top-2 w-[66rem] h-[66rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-br from-cyan-400 via-cyan-300 to-cyan-200 opacity-40"
           />
-        </div>
+        </div> */}
 
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:justify-between lg:gap-x-8 lg:px-8 lg:py-24">
           {/* Content Section */}
           <div className="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:w-1/2 lg:max-w-lg">
-            <h1 className=" font-bold tracking-tight text-gray-900 ">
-              Rory Burns
-            </h1>
-            <p className="mt-6 text-4xl leading-8 ">2025 Testimonial Year</p>
-            <p className="mt-6 text-2xl leading-8 ">
+            <h1 className=" font-bold  text-gray-900 ">Rory Burns</h1>
+            <p className="mt-2 text-4xl leading-8 ">2025 Testimonial Year</p>
+            <p className="mt-6 text-xl ">
               A year of events to celebrate the achievements and dedication of
-              the Surrey captain
+              the Surrey captain.
             </p>
             <div className="mt-10 flex items-center gap-x-6">
-              <Link
-                href="#"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              <Button
+                variant={'link'}
+                className="text-white relative mt-6 sm:text-lg lg:text-xl rounded-full px-8 sm:px-10 lg:px-12 py-6 sm:py-7 lg:py-8 lg:mt-2 bg-gradient-to-br from-blue-900/90 via-blue-600/90 to-blue-300/90"
               >
-                Get started
-              </Link>
-              <Link
-                href="#"
-                className="text-sm font-semibold leading-6 text-gray-900"
+                <Link href="/#pricing" className="flex gap-2 items-center ">
+                  <span className="font-bold text-xl text-white">Events</span>
+                  <ArrowRight className="animate-pulse" />
+                </Link>
+              </Button>
+              <Button
+                variant={'link'}
+                className="text-white relative mt-6 text-base sm:text-lg lg:text-xl rounded-full px-8 sm:px-10 lg:px-12 py-6 sm:py-7 lg:py-8 lg:mt-2 bg-gradient-to-br from-indigo-900/90 via-blue-600/90 to-blue-300/90"
               >
-                Learn more <span aria-hidden="true">→</span>
-              </Link>
+                <Link href="/#pricing" className="flex gap-2 items-center ">
+                  <span className="font-bold text-xl text-white">
+                    Charities
+                  </span>
+                  <ArrowRight className="animate-pulse" />
+                </Link>
+              </Button>
             </div>
           </div>
 
