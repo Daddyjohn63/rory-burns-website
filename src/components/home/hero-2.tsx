@@ -33,7 +33,7 @@ export default function Hero2() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
             <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-              <div className="relative rounded-full px-3 py-1  text-white ring-1 ring-white/70 hover:ring-white/20">
+              <div className="relative rounded-full px-3 py-1  text-white ring-1 ring-yellow-600">
                 A Testimonial Year of Cricket and Community
               </div>
             </div>
