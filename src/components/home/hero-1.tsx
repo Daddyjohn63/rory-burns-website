@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react';
 
 export const Hero1 = () => {
   return (
-    <section className="relative  pt-16 pb-20 overflow-hidden bg-gradient-to-br from-white via-cyan-200/60 to-cyan-300/50">
+    <section className="relative  pt-16 pb-20 overflow-hidden bg-gradient-to-br from-white via-cyan-100/60 to-cyan-200/50">
       <div className="relative isolate">
         {/* <div
           aria-hidden="true"
@@ -20,7 +20,7 @@ export const Hero1 = () => {
           />
         </div> */}
 
-        <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:justify-between lg:gap-x-8 lg:px-8 lg:py-24">
+        <div className="mx-auto max-w-7xl px-6 md:py-24 sm:py-4 lg:flex lg:items-center lg:justify-between lg:gap-x-8 lg:px-8 lg:py-24">
           {/* Content Section */}
           <div className="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:w-1/2 lg:max-w-lg">
             <h1 className=" font-bold  text-gray-900 ">Rory Burns</h1>
@@ -30,19 +30,13 @@ export const Hero1 = () => {
               the Surrey captain.
             </p>
             <div className="mt-10 flex items-center gap-x-6">
-              <Button
-                variant={'link'}
-                className="text-white relative mt-6 sm:text-lg lg:text-xl rounded-full px-8 sm:px-10 lg:px-12 py-6 sm:py-7 lg:py-8 lg:mt-2 bg-gradient-to-br from-blue-900/90 via-blue-600/90 to-blue-300/90"
-              >
+              <Button variant={'rory'}>
                 <Link href="/#pricing" className="flex gap-2 items-center ">
                   <span className="font-bold text-xl text-white">Events</span>
                   <ArrowRight className="animate-pulse" />
                 </Link>
               </Button>
-              <Button
-                variant={'link'}
-                className="text-white relative mt-6 text-base sm:text-lg lg:text-xl rounded-full px-8 sm:px-10 lg:px-12 py-6 sm:py-7 lg:py-8 lg:mt-2 bg-gradient-to-br from-indigo-900/90 via-blue-600/90 to-blue-300/90"
-              >
+              <Button variant={'rory'}>
                 <Link href="/#pricing" className="flex gap-2 items-center ">
                   <span className="font-bold text-xl text-white">
                     Charities
