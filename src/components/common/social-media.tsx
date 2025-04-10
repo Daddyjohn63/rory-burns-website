@@ -1,13 +1,13 @@
 'use client';
 
 import Link from 'next/link';
-import { Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
+import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
 
 const socialLinks = [
-  { icon: Facebook, href: 'https://facebook.com', label: 'Facebook' },
-  { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
-  { icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
-  { icon: Youtube, href: 'https://youtube.com', label: 'YouTube' }
+  { icon: FaFacebook, href: 'https://facebook.com', label: 'Facebook' },
+  { icon: FaTwitter, href: 'https://twitter.com', label: 'Twitter' },
+  { icon: FaInstagram, href: 'https://instagram.com', label: 'Instagram' },
+  { icon: FaYoutube, href: 'https://youtube.com', label: 'YouTube' }
 ];
 
 export const SocialMedia = () => {

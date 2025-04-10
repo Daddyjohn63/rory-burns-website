@@ -6,10 +6,10 @@ export const Introduction = () => {
           <h2 className=" font-bold tracking-tight">Introduction</h2>
           <p className="mt-6 text-lg leading-8 text-gray-800">
             Welcome to the official website for Rory Burns Testimonial Year—an
-            exciting celebration of one of England's most dedicated cricketers.
-            Explore exclusive events, stories, and highlights as we honour
-            Rory's commitment to the game and raise funds for causes that
-            transform communities.
+            exciting celebration of one of England&apos;s most dedicated
+            cricketers. Explore exclusive events, stories, and highlights as we
+            honour Rory&apos;s commitment to the game and raise funds for causes
+            that transform communities.
           </p>
         </div>
       </div>

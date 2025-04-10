@@ -1,6 +1,15 @@
 import { Home, User, Settings, Briefcase, BookOpen, Mail } from 'lucide-react';
+import { LucideIcon } from 'lucide-react';
 
-export const menuItems = [
+export interface MenuItem {
+  id: number;
+  label: string;
+  href: string;
+  icon: LucideIcon;
+  mainHeader: boolean;
+}
+
+export const menuItems: MenuItem[] = [
   {
     id: 1,
     label: 'Home',
@@ -51,3 +60,6 @@ export const menuItems = [
     mainHeader: false
   }
 ];
+
+export const links = menuItems.filter(item => item.mainHeader);
+export const footerLinks = menuItems;
