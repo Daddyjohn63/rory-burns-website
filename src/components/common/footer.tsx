@@ -18,7 +18,7 @@ export const Footer = () => {
 
           {/* Navigation Section */}
           <div className="flex items-center">
-            <Navigation className="hidden md:block" isFooter />
+            <Navigation className="hidden md:block" />
           </div>
 
           {/* Social Media Section */}
@@ -33,7 +33,7 @@ export const Footer = () => {
             <p className="text-sm text-foreground/60">
               © {currentYear} Rory Burns. All rights reserved.
             </p>
-            <Navigation isFooter className="md:hidden" />
+            <Navigation className="md:hidden" />
           </div>
         </div>
       </div>
