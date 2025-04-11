@@ -31,3 +31,8 @@ export async function getEvents() {
   }
   return events;
 }
+
+export async function getEventBySlug() {
+  const events = await getEvents();
+  return events.map(event => event.slug);
+}

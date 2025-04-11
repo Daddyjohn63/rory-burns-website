@@ -22,7 +22,7 @@ const formatDate = (dateString: string) => {
 
 export default async function EventsPage() {
   const events = await getEvents();
-  console.log('events', events);
+  //console.log('events', events);
 
   return (
     <section>

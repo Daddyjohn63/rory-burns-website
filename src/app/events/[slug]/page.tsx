@@ -1,5 +1,12 @@
 import Image from 'next/image';
-import { getEvent } from '@/lib/events';
+import { getEvent, getEventBySlug } from '@/lib/events';
+
+export async function generateStaticParams() {
+  const slugs = await getEventBySlug();
+  return slugs.map(slug => ({
+    slug: slug
+  }));
+}
 
 export default async function EventPage({
   params: { slug }
