@@ -1,13 +1,10 @@
 'use client';
 
 import Link from 'next/link';
-import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
 
 const socialLinks = [
-  { icon: FaFacebook, href: 'https://facebook.com', label: 'Facebook' },
-  { icon: FaTwitter, href: 'https://twitter.com', label: 'Twitter' },
-  { icon: FaInstagram, href: 'https://instagram.com', label: 'Instagram' },
-  { icon: FaYoutube, href: 'https://youtube.com', label: 'YouTube' }
+  { icon: FaInstagram, href: 'https://instagram.com', label: 'Instagram' }
 ];
 
 export const SocialMedia = () => {

@@ -5,9 +5,9 @@ import { ArrowRight, Mail } from 'lucide-react';
 
 export const CTA = () => {
   return (
-    <section className="bg-gradient-to-br from-teal-50/60 via-white to-teal-50/60 py-12 lg:py-24">
+    <section className="bg-gradient-to-br from-gray-100 via-white to-gray-100/60 py-12 md:py-24">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 className=" font-bold md:mb-12 md:text-center pl-6 text-[#866908]">
+        <h2 className=" font-bold md:mb-12 md:text-center pl-6 text-[#9C8561]">
           We have an exciting year planned!
         </h2>
         <div className="flex flex-col md:flex-row gap-8">
@@ -30,59 +30,59 @@ export const CTA = () => {
           </div>
           {/* column 2 */}
           <Link href="/events" className="block w-full md:w-1/3">
-            <div className="h-full flex flex-col p-6 bg-white rounded-lg border border-gray-200 shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <div className="h-full flex flex-col p-6 bg-black rounded-lg border border-gray-200 shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer">
               <div className="flex items-center gap-4 mb-4">
-                <span className="text-[#866908] w-14 h-14 flex items-center justify-center rounded-full bg-gray-100 text-2xl">
-                  <FaCalendarCheck />
+                <span className="text-[#9C8561] flex-shrink-0 flex items-center justify-center rounded-full bg-gray-200 p-3">
+                  <FaCalendarCheck className="w-6 h-6 md:w-7 md:h-7" />
                 </span>
-                <h3 className="text-xl font-semibold text-[#866908]">
-                  Six exciting events
-                </h3>
+                <h3 className="text-2xl font-bold">Six exciting events</h3>
               </div>
 
-              <p className="flex-grow">
+              <p className="flex-grow text-white">
                 From a County Championship match, gala dinners, a T20 and Test
                 match, a Golf day, rounded by a Grand Finale Dinner in the Ashes
                 Suite at the Oval.
               </p>
-              <span className="mt-4 flex items-center gap-2 hover:text-[#866908]">
+              <span className="mt-4 flex items-center gap-2 text-white hover:text-[#866908]">
                 Find out more
-                <ArrowRight className="animate-pulse text-[#866908]" />
+                <ArrowRight className="animate-pulse text-[#9C8561]" />
               </span>
             </div>
           </Link>
           {/* column 3 */}
           <Link href="/events" className="block w-full md:w-1/3">
-            <div className="h-full flex flex-col p-6 bg-white rounded-lg border border-gray-200 shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <div className="h-full flex flex-col p-6 bg-black rounded-lg border border-gray-200 shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer">
               <div className="flex items-center gap-4 mb-4">
-                <span className="text-[#866908] w-14 h-14 flex items-center justify-center rounded-full bg-gray-100 text-2xl">
-                  <FaCalendarCheck />
+                <span className="text-[#9C8561] flex-shrink-0 flex items-center justify-center rounded-full bg-gray-200 p-3">
+                  <FaCalendarCheck className="w-6 h-6 md:w-7 md:h-7" />
                 </span>
-                <h3 className="text-xl font-semibold text-[#866908]">
+                <h3 className="text-2xl font-semibold">
                   Supporting two charities
                 </h3>
               </div>
 
-              <p className="flex-grow">
-                From a County Championship match, gala dinners, a T20 and Test
-                match, a Golf day, rounded by a Grand Finale Dinner in the Ashes
-                Suite at the Oval.
+              <p className="flex-grow text-white">
+                Rory will be supporting two incredible charities: GLF
+                Schools&apos; Foundation and the Professional Cricketers&apos;
+                Association (PCA) Trust. These organisations reflect Rory&apos;s
+                passion for education, community development, and the well-being
+                of current and former cricketers.
               </p>
-              <span className="mt-4 flex items-center gap-2 hover:text-[#866908]">
+              <span className="mt-4 flex items-center gap-2 text-white hover:text-[#9C8561]">
                 Find out more
-                <ArrowRight className="animate-pulse text-[#866908]" />
+                <ArrowRight className="animate-pulse text-[#9C8561]" />
               </span>
             </div>
           </Link>
         </div>
       </div>
       <div className="container flex flex-col gap-4 items-center justify-center mt-12 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <p className="text-center text-lg font-semibold">
+        <p className="text-center text-gray-700 text-lg font-semibold">
           If you would like to email any questions or wish to get involved,
           please email Lucy.
         </p>
-        <div className="flex items-center gap-2 text-lg font-semibold hover:text-[#866908]">
-          <Mail />
+        <div className="flex items-center text-gray-700 gap-2 text-lg font-semibold hover:text-[#866908]">
+          <Mail className="text-[#866908]" />
           <Link href="mailto:lucy@roryburns.com">me@lucydonovan.com</Link>
         </div>
       </div>

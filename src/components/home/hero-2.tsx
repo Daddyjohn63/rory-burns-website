@@ -39,7 +39,7 @@ export default function Hero2() {
               </div>
             </div>
             <div className="text-center">
-              <h1 className="text-balance text-5xl font-semibold tracking text-white sm:text-7xl">
+              <h1 className="text-balance text-5xl font-semibold tracking leading-loose sm:text-7xl">
                 Celebrating Rory Burns
               </h1>
               <p className="mt-8 text-pretty text-lg font-medium text-white sm:text-xl/8">

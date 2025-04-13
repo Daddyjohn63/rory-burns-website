@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export const About = () => {
   return (
-    <section className="bg-white py-12 lg:py-24">
+    <section className="bg-white py-12 md:py-32 md:pt-48">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-8 items-center">
           <div className="lg:w-1/2">
@@ -14,14 +14,22 @@ export const About = () => {
               the sport to becoming one of England&apos;s most dependable
               cricketers.
             </p>
-            <p className="text-lg text-gray-700">
+            <p className=" text-gray-700">
               Welcome to the official website for Rory Burns Testimonial Year—an
               exciting celebration of one of England&apos;s most dedicated
               cricketers. Explore exclusive events, stories, and highlights as
               we honour Rory&apos;s commitment to the game and raise funds for
               causes that transform communities.
             </p>
+            <Image
+              src="/home/surrey-logo.jpg"
+              alt="Rory Burns Testimonial Year"
+              width={500}
+              height={246}
+              className="w-1/2 h-auto rounded-lg mt-4"
+            />
           </div>
+          <div></div>
           <div className="lg:w-1/2">
             <Image
               src="/home/about-rory.jpg"

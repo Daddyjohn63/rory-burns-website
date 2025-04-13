@@ -23,7 +23,7 @@ export const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 z-50 w-full backdrop-blur-sm transition-colors duration-300 ${
+      className={` fixed top-0 z-50 w-full backdrop-blur-sm transition-colors duration-300 ${
         isScrolled ? 'bg-black/60' : 'bg-black/10'
       }`}
     >
