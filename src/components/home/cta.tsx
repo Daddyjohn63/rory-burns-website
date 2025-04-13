@@ -1,19 +1,19 @@
 import { FaCalendarCheck } from 'react-icons/fa';
 
 import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Mail } from 'lucide-react';
 
 export const CTA = () => {
   return (
-    <section className="bg-gradient-to-br from-teal-100/60 via-white to-teal-100/60 py-12 lg:py-24">
+    <section className="bg-gradient-to-br from-teal-50/60 via-white to-teal-50/60 py-12 lg:py-24">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold md:mb-12 md:text-center pl-6">
+        <h2 className=" font-bold md:mb-12 md:text-center pl-6 text-[#866908]">
           We have an exciting year planned!
         </h2>
         <div className="flex flex-col md:flex-row gap-8">
           {/* column 1 */}
-          <div className="w-full md:w-1/3 p-6 rounded-lg shadow-sm">
-            <h3 className="text-xl font-semibold mb-4">
+          <div className="w-full md:w-1/3 p-6 md:mt-4 rounded-lg shadow-sm">
+            <h3 className="text-xl font-semibold mb-4 text-[#866908]">
               Check out our events and good causes
             </h3>
             <p>
@@ -35,7 +35,9 @@ export const CTA = () => {
                 <span className="text-[#866908] w-14 h-14 flex items-center justify-center rounded-full bg-gray-100 text-2xl">
                   <FaCalendarCheck />
                 </span>
-                <h3 className="text-xl font-semibold">Six exciting events</h3>
+                <h3 className="text-xl font-semibold text-[#866908]">
+                  Six exciting events
+                </h3>
               </div>
 
               <p className="flex-grow">
@@ -56,7 +58,7 @@ export const CTA = () => {
                 <span className="text-[#866908] w-14 h-14 flex items-center justify-center rounded-full bg-gray-100 text-2xl">
                   <FaCalendarCheck />
                 </span>
-                <h3 className="text-xl font-semibold">
+                <h3 className="text-xl font-semibold text-[#866908]">
                   Supporting two charities
                 </h3>
               </div>
@@ -72,6 +74,16 @@ export const CTA = () => {
               </span>
             </div>
           </Link>
+        </div>
+      </div>
+      <div className="container flex flex-col gap-4 items-center justify-center mt-12 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <p className="text-center text-lg font-semibold">
+          If you would like to email any questions or wish to get involved,
+          please email Lucy.
+        </p>
+        <div className="flex items-center gap-2 text-lg font-semibold hover:text-[#866908]">
+          <Mail />
+          <Link href="mailto:lucy@roryburns.com">me@lucydonovan.com</Link>
         </div>
       </div>
     </section>

@@ -6,7 +6,7 @@ export const About = () => {
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-8 items-center">
           <div className="lg:w-1/2">
-            <h2 className="text-3xl font-bold mb-4">
+            <h2 className=" font-bold mb-4 text-[#866908]">
               Rory Burns Testimonial Year
             </h2>
             <p className="text-xl text-gray-600 font-bold mb-4">
