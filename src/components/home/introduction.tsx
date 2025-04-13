@@ -1,6 +1,6 @@
 export const Introduction = () => {
   return (
-    <section className="bg-gray-200 py-24">
+    <section className="relative bg-gradient-to-br from-teal-100/60 via-white to-teal-100/60 py-12 lg:py-24">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className=" font-bold tracking-tight">Introduction</h2>

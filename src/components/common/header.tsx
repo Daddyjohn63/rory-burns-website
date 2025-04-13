@@ -4,10 +4,29 @@ import { Logo } from './logo';
 import { Navigation } from './navigation';
 import { SocialMedia } from './social-media';
 import { MobileSideBar } from './mobile-sidebar';
+import { useEffect, useState } from 'react';
 
 export const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 300);
+    };
+
+    // Initial check
+    handleScroll();
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <header className="fixed top-0 z-50 w-full bg-black/10 backdrop-blur-sm">
+    <header
+      className={`fixed top-0 z-50 w-full backdrop-blur-sm transition-colors duration-300 ${
+        isScrolled ? 'bg-black/60' : 'bg-black/10'
+      }`}
+    >
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-24 items-center justify-between">
           <div className="flex items-center">
