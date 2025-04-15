@@ -1,6 +1,6 @@
 ---
 image: '/events/golf.jpg'
-title: 'Rory Burns Testimonial Golf Day'
+title: 'Testimonial Golf Day'
 start_date: '2025-10-01'
 end_date: ''
 description: 'Join Rory Burns and friends for a superb day of golf at Foxhills...'

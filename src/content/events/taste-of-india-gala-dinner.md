@@ -1,6 +1,6 @@
 ---
 image: '/events/dinner.jpg'
-title: 'Rory Burns Taste of India Gala Black Tie Dinner '
+title: 'Taste of India Gala Black Tie Dinner '
 start_date: '2025-06-19'
 end_date: ''
 description: 'Join Rory Burns, Kumar Sangrakkara, Tom Curran and Sam Curran, Sam Billings, Jason Roy and Jos Butler... '
