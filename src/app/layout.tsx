@@ -3,6 +3,7 @@ import { Source_Sans_3 as FontSans } from 'next/font/google';
 import './globals.css';
 import { Header } from '@/components/common/header';
 import { Footer } from '@/components/common/footer';
+import { BackToTop } from '@/components/common/back-to-top';
 
 const fontSans = FontSans({
   variable: '--font-sans',
@@ -27,6 +28,7 @@ export default function RootLayout({
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />
+          <BackToTop />
         </div>
       </body>
     </html>
