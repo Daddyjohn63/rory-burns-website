@@ -13,7 +13,7 @@ export const CTA = () => {
         <div className="flex flex-col md:flex-row gap-8">
           {/* column 1 */}
           <div className="w-full md:w-1/3 p-6 md:mt-4 rounded-lg shadow-sm">
-            <h3 className="text-xl font-semibold mb-4 text-[#866908]">
+            <h3 className="text-2xl font-semibold mb-4 text-[#866908]">
               Check out our events and good causes
             </h3>
             <p>
@@ -30,7 +30,7 @@ export const CTA = () => {
           </div>
           {/* column 2 */}
           <Link href="/events" className="block w-full md:w-1/3">
-            <div className="h-full flex flex-col p-6 bg-black rounded-lg border border-gray-200 shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <div className="relative h-full flex flex-col p-6 bg-gradient-to-br from-[#000000] via-[#000000]/90 to-[#000000]/80 rounded-lg border border-gray-200 shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer">
               <div className="flex items-center gap-4 mb-4">
                 <span className="text-[#9C8561] flex-shrink-0 flex items-center justify-center rounded-full bg-gray-200 p-3">
                   <FaCalendarCheck className="w-6 h-6 md:w-7 md:h-7" />
@@ -51,7 +51,7 @@ export const CTA = () => {
           </Link>
           {/* column 3 */}
           <Link href="/events" className="block w-full md:w-1/3">
-            <div className="h-full flex flex-col p-6 bg-black rounded-lg border border-gray-200 shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer">
+            <div className=" relative h-full flex flex-col p-6 bg-gradient-to-br from-[#000000] via-[#000000]/90 to-[#000000]/80 rounded-lg border border-gray-200 shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer">
               <div className="flex items-center gap-4 mb-4">
                 <span className="text-[#9C8561] flex-shrink-0 flex items-center justify-center rounded-full bg-gray-200 p-3">
                   <FaCalendarCheck className="w-6 h-6 md:w-7 md:h-7" />
