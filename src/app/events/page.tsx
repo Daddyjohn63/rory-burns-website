@@ -34,7 +34,10 @@ export default async function EventsPage() {
       <div className="container mx-auto max-w-7xl pb-16 px-4 sm:px-6 lg:px-8 mt-24">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {events.map(event => (
-            <Card key={event.slug} className="flex flex-col">
+            <Card
+              key={event.slug}
+              className="flex flex-col relative bg-gradient-to-br from-[#000000] via-[#000000]/90 to-[#000000]/80"
+            >
               <div className="relative h-48 w-full">
                 <Image
                   src={event.image}
@@ -50,24 +53,24 @@ export default async function EventsPage() {
                   </h3>
                 </CardTitle>
                 <CardDescription className="flex flex-col gap-2">
-                  <div className="flex items-center">
-                    <Calendar className="w-4 h-4 mr-2 text-[#000/70]" />
-                    {!event.end_date
-                      ? formatDate(event.start_date)
-                      : `${formatDate(event.start_date)} - ${formatDate(
-                          event.end_date
-                        )}`}
+                  <div className="flex items-center pt-2">
+                    <Calendar className="w-4 h-4 mr-2 text-[#9C8561]" />
+                    <span className="text-white">
+                      {!event.end_date
+                        ? formatDate(event.start_date)
+                        : `${formatDate(event.start_date)} - ${formatDate(
+                            event.end_date
+                          )}`}
+                    </span>
                   </div>
                   <div className="flex items-center">
-                    <MapPin className="w-4 h-4 mr-2 text-[#000/70]" />
-                    {event.venue}
+                    <MapPin className="w-4 h-4 mr-2 text-[#9C8561]" />
+                    <span className="text-white">{event.venue}</span>
                   </div>
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text text-muted-foreground">
-                  {event.description}
-                </p>
+                <p className="text text-white">{event.description}</p>
               </CardContent>
               <CardFooter className="mt-auto">
                 <Button asChild variant="event">

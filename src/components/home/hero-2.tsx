@@ -54,7 +54,7 @@ export default function Hero2() {
               </div>
             </div>
             <div className="text-center">
-              <h1 className="text-balance text-5xl font-semibold tracking leading-loose sm:text-7xl">
+              <h1 className="text-balance text-5xl font-semibold tracking-tight leading-loose sm:text-7xl">
                 Celebrating Rory Burns
               </h1>
               <p className="mt-8 text-pretty text-lg font-medium text-white sm:text-xl/8">
@@ -62,11 +62,13 @@ export default function Hero2() {
                 charities close to his heart
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
-                <Button variant="rory" className="font-bold">
-                  <span className="font-bold text-xl text-white">
-                    Support our events
-                  </span>
-                  <ArrowRight className="animate-pulse" />
+                <Button asChild variant="rory" className="font-bold">
+                  <a href="/events">
+                    <span className="font-bold text-xl text-white">
+                      Support our events
+                    </span>
+                    <ArrowRight className="animate-pulse" />
+                  </a>
                 </Button>
               </div>
             </div>
