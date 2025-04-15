@@ -1,5 +1,5 @@
 ---
-image: '/home/hero-1.jpg'
+image: '/events/golf.jpg'
 title: 'Rory Burns Testimonial Golf Day'
 start_date: '2025-10-01'
 end_date: ''

@@ -1,5 +1,5 @@
 ---
-image: '/home/hero-1.jpg'
+image: '/events/county-match-event.jpg'
 title: 'County Championship Surrey vs Yorkshire'
 start_date: '2025-05-16'
 end_date: '2025-05-19'

@@ -43,7 +43,7 @@ export const Sponsors = () => {
           <div className="flex items-center justify-center p-4 bg-gray-50 rounded-lg ">
             <Image
               src="/home/levy.png"
-              alt="Sponsor 4"
+              alt="levy"
               width={150}
               height={64}
               className="object-contain"
@@ -53,7 +53,7 @@ export const Sponsors = () => {
           <div className="flex items-center justify-center p-4 bg-gray-50 rounded-lg ">
             <Image
               src="/home/heineken.png"
-              alt="Sponsor 5"
+              alt="heineken"
               width={150}
               height={64}
               className="object-contain"
