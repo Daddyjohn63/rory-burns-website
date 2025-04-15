@@ -10,6 +10,7 @@ import {
   CardTitle
 } from '@/components/ui/card';
 import { InnerHeader } from '@/components/common/Inner-header';
+import { Calendar, MapPin } from 'lucide-react';
 
 const formatDate = (dateString: string) => {
   const date = new Date(dateString);
@@ -43,11 +44,28 @@ export default async function EventsPage() {
                 />
               </div>
               <CardHeader>
-                <CardTitle>{event.title}</CardTitle>
-                <CardDescription>{formatDate(event.date)}</CardDescription>
+                <CardTitle>
+                  <h3 className="text-2xl font-semibold line-clamp-2 min-h-[3.5rem]">
+                    {event.title}
+                  </h3>
+                </CardTitle>
+                <CardDescription className="flex flex-col gap-2">
+                  <div className="flex items-center">
+                    <Calendar className="w-4 h-4 mr-2 text-[#000/70]" />
+                    {!event.end_date
+                      ? formatDate(event.start_date)
+                      : `${formatDate(event.start_date)} - ${formatDate(
+                          event.end_date
+                        )}`}
+                  </div>
+                  <div className="flex items-center">
+                    <MapPin className="w-4 h-4 mr-2 text-[#000/70]" />
+                    {event.venue}
+                  </div>
+                </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">
+                <p className="text text-muted-foreground">
                   {event.description}
                 </p>
               </CardContent>
