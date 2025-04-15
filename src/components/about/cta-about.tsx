@@ -1,32 +1,52 @@
 import { FaCalendarCheck } from 'react-icons/fa';
 
 import Link from 'next/link';
-import { ArrowRight, Mail } from 'lucide-react';
+import { ArrowRight, ChevronRight, Mail } from 'lucide-react';
 
-export const CTA = () => {
+export const data = [
+  {
+    description:
+      'Join us at exclusive testimonial events throughout the year, with proceeds supporting both charities.'
+  },
+  {
+    description:
+      'Every contribution, big or small, makes a difference. Secure donation links will be provided.'
+  },
+  {
+    description:
+      'Take part in exciting auctions featuring signed memorabilia, experiences, and unique items from Rory and the cricketing world.'
+  },
+  {
+    description:
+      "Share Rory's testimonial year and these fantastic causes on social media to help raise awareness."
+  }
+];
+
+export const CTAAbout = () => {
   return (
-    <section className="relative bg-gradient-to-br from-gray-100 via-white to-gray-100/60 py-12 md:py-24">
+    <section className="relative bg-gradient-to-br from-gray-100 via-white to-gray-100/60 py-12 md:py-32">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 className=" font-bold md:mb-12 md:text-center pl-6 text-[#9C8561]">
-          We have an exciting year planned!
+        <h2 className="font-bold md:mb-12 md:text-center pl-6 text-[#9C8561]">
+          How You Can Contribute
         </h2>
         <div className="flex flex-col md:flex-row gap-8">
           {/* column 1 */}
           <div className="w-full md:w-1/3 p-6 md:mt-4 rounded-lg shadow-sm">
-            <h3 className="text-2xl font-semibold mb-4 text-[#866908]">
-              Check out our events, good causes and more
-            </h3>
-            <p>
-              Rory Burns&apos; testimonial year is more than a celebration of
-              his remarkable cricketing career. It&apos;s an opportunity to make
-              a lasting impact.<br></br> <br></br> Throughout the year, Rory
-              will be supporting two incredible charities,{' '}
-              <span className="font-bold">GLF Schools&apos; Foundation</span>{' '}
-              and the{' '}
-              <span className="font-bold">
-                Professional Cricketers&apos; Association (PCA) Trust
-              </span>
-            </p>
+            {/* <h3 className="text-2xl font-semibold mb-4 text-[#866908]">
+              Fans and supporters can get involved in several ways
+            </h3> */}
+            <ul>
+              {data.map((item, index) => (
+                <li key={index} className="mb-4">
+                  <p className="text-gray-700 flex items-start gap-2">
+                    <ChevronRight className="w-6 h-6 flex-shrink-0" />
+                    <span
+                      dangerouslySetInnerHTML={{ __html: item.description }}
+                    />
+                  </p>
+                </li>
+              ))}
+            </ul>
           </div>
           {/* column 2 */}
           <Link href="/events" className="block w-full md:w-1/3">
@@ -64,9 +84,10 @@ export const CTA = () => {
               <p className="flex-grow text-white">
                 Rory will be supporting two incredible charities: GLF
                 Schools&apos; Foundation and the Professional Cricketers&apos;
-                Association (PCA) Trust. These organisations reflect Rory&apos;s
-                passion for education, community development, and the well-being
-                of current and former cricketers.
+                Association (PCA) Trust. <br></br>
+                <br></br>These organisations reflect Rory&apos;s passion for
+                education, community development, and the well-being of current
+                and former cricketers.
               </p>
               <span className="mt-4 flex items-center gap-2 text-white hover:text-[#9C8561]">
                 Find out more
