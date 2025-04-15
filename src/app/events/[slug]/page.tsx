@@ -18,7 +18,7 @@ export default async function EventPage({
   return (
     <>
       <h1 className="text-4xl mt-24 font-bold">{event.title}</h1>
-      <p className="text-gray-500">{event.date}</p>
+      <p className="text-gray-500">{event.start_date}</p>
       <p className="text-gray-500">{event.description}</p>
       <Image src={event.image} alt={event.title} width={1000} height={1000} />
       <article
