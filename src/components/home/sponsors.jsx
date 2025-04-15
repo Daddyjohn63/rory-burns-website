@@ -22,7 +22,7 @@ export const Sponsors = () => {
           {/* Sponsor 2 */}
           <div className="flex items-center justify-center p-4 bg-gray-50 rounded-lg hover:shadow-md transition-shadow">
             <Image
-              src="/home/AJ-Sports.jpg"
+              src="/home/aj-Sports.jpg"
               alt="AJ-Sports"
               width={150}
               height={64}

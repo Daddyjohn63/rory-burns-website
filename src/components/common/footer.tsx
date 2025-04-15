@@ -19,7 +19,7 @@ export const Footer = () => {
 
           {/* Navigation Section */}
           <div className="flex items-center">
-            <Navigation className="hidden md:block" />
+            <Navigation className="hidden md:block" isFooter={true} />
           </div>
 
           {/* Social Media Section */}
@@ -44,7 +44,7 @@ export const Footer = () => {
                 Web and Prosper
               </Link>
             </p>
-            <Navigation className="md:hidden" />
+            <Navigation className="md:hidden" isFooter={true} />
           </div>
         </div>
       </div>

@@ -3,10 +3,11 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
-import { links, MenuItem } from '@/utils/links';
+import { links, MenuItem, footerLinks } from '@/utils/links';
 
 export const Navigation = ({
-  className
+  className,
+  isFooter = false
 }: {
   className?: string;
   isFooter?: boolean;
@@ -21,6 +22,8 @@ export const Navigation = ({
       : '';
   };
 
+  const navigationLinks = isFooter ? footerLinks : links;
+
   return (
     <nav
       className={cn(
@@ -28,7 +31,7 @@ export const Navigation = ({
         className
       )}
     >
-      {links.map((link: MenuItem) => (
+      {navigationLinks.map((link: MenuItem) => (
         <Link
           key={link.href}
           href={link.href}
