@@ -30,7 +30,7 @@ export default async function EventsPage() {
         title="Events"
         description="Come and support us at our events"
       />
-      <div className="container mt-24">
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-24">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {events.map(event => (
             <Card key={event.slug} className="flex flex-col">
