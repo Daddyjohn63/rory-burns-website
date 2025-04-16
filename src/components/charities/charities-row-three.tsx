@@ -7,7 +7,7 @@ export const CharitiesRowThree = () => {
         <div className="flex flex-col lg:flex-row gap-12 items-center">
           <div className="lg:w-1/2">
             <Image
-              src="/charities/glf-schools-foundation-v3.jpg"
+              src="/charities/glf-schools-foundation.svg"
               alt="Surrey Cricket Foundation"
               className="w-full h-auto rounded-lg shadow-lg"
               width={1200}
