@@ -4,7 +4,7 @@ import './globals.css';
 import { Header } from '@/components/common/header';
 import { Footer } from '@/components/common/footer';
 import { BackToTop } from '@/components/common/back-to-top';
-import { ScrollToTop } from '@/components/common/scroll-to-top';
+import { ScrollHandler } from '@/components/common/scroll-handler';
 
 const fontSans = FontSans({
   variable: '--font-sans',
@@ -31,7 +31,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${fontSans.variable} antialiased`}>
         <div className="relative flex flex-col min-h-screen">
-          <ScrollToTop />
+          <ScrollHandler />
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />
