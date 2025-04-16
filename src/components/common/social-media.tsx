@@ -19,7 +19,7 @@ export const SocialMedia = () => {
           className="text-white hover:text-primary transition-colors"
           aria-label={label}
         >
-          <Icon className="h-5 w-5" />
+          <Icon className="h-5 w-5 text-white" />
         </Link>
       ))}
     </div>

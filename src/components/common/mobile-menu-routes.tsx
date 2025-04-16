@@ -23,7 +23,7 @@ export const MobileMenuRoutes = () => {
           key={item.href}
           href={item.href}
           className={cn(
-            ' font-medium transition-colors hover:text-yellow-500',
+            ' font-medium text-xl transition-colors hover:text-yellow-500',
             isActive(item.href)
           )}
         >
