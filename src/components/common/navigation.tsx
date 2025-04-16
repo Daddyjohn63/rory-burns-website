@@ -36,6 +36,7 @@ export const Navigation = ({
           key={link.href}
           href={link.href}
           className={cn(isActive(link.href) && 'text-yellow-500')}
+          scroll={false}
         >
           {link.label}
         </Link>
