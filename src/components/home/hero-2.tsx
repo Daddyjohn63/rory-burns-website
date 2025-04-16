@@ -10,7 +10,7 @@ export default function Hero2() {
 
   return (
     <div className="bg-black">
-      <div className="relative isolate overflow-hidden pt-14">
+      <div className="relative isolate overflow-hidden pt-36">
         <div
           className="absolute left-[calc(50%-4rem)] top-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-45rem)] xl:left-[calc(50%-24rem)]"
           aria-hidden="true"
@@ -47,14 +47,14 @@ export default function Hero2() {
         <div className="absolute inset-0 -z-10 bg-black/50" />
 
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+          <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
             <div className="hidden sm:mb-8 sm:flex sm:justify-center">
               <div className="relative rounded-full px-3 py-1 text-white ring-1 ring-yellow-600">
                 A Testimonial Year of Cricket and Community
               </div>
             </div>
             <div className="text-center">
-              <h1 className="text-balance text-5xl font-semibold tracking-tight leading-loose sm:text-7xl">
+              <h1 className="text-balance text-5xl font-semibold tracking-wide md:leading-loose sm:text-7xl">
                 Celebrating Rory Burns
               </h1>
               <p className="mt-8 text-pretty text-lg font-medium text-white sm:text-xl/8">

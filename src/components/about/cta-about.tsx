@@ -24,8 +24,8 @@ export const data = [
 
 export const CTAAbout = () => {
   return (
-    <section className="relative bg-gradient-to-br from-gray-100 via-white to-gray-100/60 py-12 md:py-32">
-      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section className="relative  py-12 md:py-32">
+      <div className="container flex flex-col gap-8 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 className="font-bold md:mb-12 md:text-center pl-6 text-[#9C8561]">
           How You Can Contribute
         </h2>
@@ -38,7 +38,7 @@ export const CTAAbout = () => {
             <ul>
               {data.map((item, index) => (
                 <li key={index} className="mb-4">
-                  <p className="text-gray-700 flex items-start gap-2">
+                  <p className="text-gray-600 flex items-start gap-2">
                     <ChevronRight className="w-6 h-6 flex-shrink-0" />
                     <span
                       dangerouslySetInnerHTML={{ __html: item.description }}
@@ -97,8 +97,8 @@ export const CTAAbout = () => {
           </Link>
         </div>
       </div>
-      <div className="container flex flex-col gap-4 items-center justify-center mt-12 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <p className="text-center text-gray-700 text-lg font-semibold">
+      <div className="container flex pt-6 flex-col gap-4 items-center justify-center mt-12 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <p className="text-center max-w-xl text-gray-700 text-lg font-semibold">
           If you would like to email any questions, wish to get involved or
           receive regular updates, please email Lucy.
         </p>

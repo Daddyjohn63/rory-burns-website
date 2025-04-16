@@ -26,7 +26,7 @@ export const About = () => {
               alt="Rory Burns Testimonial Year"
               width={500}
               height={246}
-              className="w-1/2 h-auto rounded-lg mt-4"
+              className="w-1/3 h-auto rounded-lg mt-4"
             />
           </div>
           <div></div>

@@ -70,6 +70,14 @@ const config: Config = {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)'
+      },
+      backgroundImage: {
+        'section-gradient':
+          'linear-gradient(to bottom right, rgb(243 244 246), rgb(255 255 255), rgba(243, 244, 246, 0.6))'
+      },
+      boxShadow: {
+        section:
+          '0 2px 4px -1px rgba(0, 0, 0, 0.1), 0 -2px 4px -1px rgba(0, 0, 0, 0.1)'
       }
     }
   },

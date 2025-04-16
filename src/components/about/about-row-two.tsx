@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export const AboutRowTwo = () => {
   return (
-    <section className="relative bg-gradient-to-br from-gray-100 via-white to-gray-100/60 py-12 md:py-32">
+    <section className="relative shadow-section bg-section-gradient py-12 md:py-32">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row-reverse gap-8 md:gap-14 items-center">
           <div className="md:w-1/2">

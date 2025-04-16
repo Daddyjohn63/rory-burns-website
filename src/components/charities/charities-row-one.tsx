@@ -3,7 +3,10 @@ export const CharitiesRowOne = () => {
     <section className="container mx-auto">
       <div className="px-6 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="mx-auto mt-6  text-pretty text-lg/8 text-gray-600">
+          <h2 className=" font-bold mb-4 ">
+            We are supporting two incredible charities
+          </h2>
+          <p className="mx-auto mt-6  text-pretty text-gray-600">
             Rory Burns&apos; testimonial year is more than a celebration of his
             remarkable cricketing career—it&apos;s an opportunity to make a
             lasting impact. Throughout the year, Rory will be supporting two

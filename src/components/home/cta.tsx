@@ -5,7 +5,7 @@ import { ArrowRight, Mail } from 'lucide-react';
 
 export const CTA = () => {
   return (
-    <section className="relative bg-gradient-to-br from-gray-100 via-white to-gray-100/60 py-12 md:py-24">
+    <section className="relative shadow-section bg-section-gradient py-12 md:py-24">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 className=" font-bold md:mb-12 md:text-center pl-6 text-[#9C8561]">
           We have an exciting year planned!
@@ -16,7 +16,7 @@ export const CTA = () => {
             <h3 className="text-2xl font-semibold mb-4 text-[#866908]">
               Check out our events, good causes and more
             </h3>
-            <p>
+            <p className="text-gray-600">
               Rory Burns&apos; testimonial year is more than a celebration of
               his remarkable cricketing career. It&apos;s an opportunity to make
               a lasting impact.<br></br> <br></br> Throughout the year, Rory
@@ -77,7 +77,7 @@ export const CTA = () => {
         </div>
       </div>
       <div className="container flex flex-col gap-4 items-center justify-center mt-12 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <p className="text-center text-gray-700 text-lg font-semibold">
+        <p className="text-center max-w-xl text-gray-700 text-lg font-semibold">
           If you would like to email any questions, wish to get involved or
           receive regular updates, please email Lucy.
         </p>
