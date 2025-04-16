@@ -13,7 +13,7 @@ export const Header: FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 300);
+      setIsScrolled(window.scrollY > 50);
     };
 
     // Initial check
@@ -25,8 +25,8 @@ export const Header: FC = () => {
 
   return (
     <header
-      className={`fixed top-0 z-50 w-full backdrop-blur-sm transition-colors duration-300 ${
-        isScrolled ? 'bg-black/60' : 'bg-black/10'
+      className={`bg-black z-50 w-full backdrop-blur-sm transition-colors duration-300 md:fixed md:top-0 ${
+        isScrolled ? 'md:bg-black/90' : 'md:bg-black/10'
       }`}
     >
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

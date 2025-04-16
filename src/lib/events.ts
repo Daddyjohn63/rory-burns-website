@@ -65,3 +65,31 @@ export async function getEventBySlug() {
   const events = await getEvents();
   return events.map(event => event.slug);
 }
+
+export async function getNextEvent(
+  currentEventDate: string
+): Promise<Event | null> {
+  const events = await getEvents();
+  const currentDate = new Date(currentEventDate);
+
+  // Find the first event that starts after the current event
+  const nextEvent = events.find(
+    event => new Date(event.start_date) > currentDate
+  );
+
+  return nextEvent || null;
+}
+
+export async function getPreviousEvent(
+  currentEventDate: string
+): Promise<Event | null> {
+  const events = await getEvents();
+  const currentDate = new Date(currentEventDate);
+
+  // Find the last event that starts before the current event
+  const previousEvent = events
+    .filter(event => new Date(event.start_date) < currentDate)
+    .pop();
+
+  return previousEvent || null;
+}

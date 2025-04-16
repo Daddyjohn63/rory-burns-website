@@ -14,7 +14,11 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   title: 'Rory Burns Testimonial Year',
   description:
-    'Join us as we honour Rory&apos;s remarkable journey and support charities close to his heart'
+    'Join us as we honour Rory&apos;s remarkable journey and support charities close to his heart',
+  icons: {
+    icon: '/favicon.png',
+    apple: '/favicon.png'
+  }
 };
 
 export default function RootLayout({

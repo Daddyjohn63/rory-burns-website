@@ -47,7 +47,7 @@ export const MobileSideBar = () => {
         size="sm"
         aria-label="Open mobile menu"
       >
-        <Menu className="!h-6 !w-6" />
+        <Menu className="!h-6 !w-6 text-white hover:text-black" />
       </Button>
       <Sheet open={isOpen} onOpenChange={onClose}>
         <SheetContent side="right" className="p-0 bg-white w-full">

@@ -1,7 +1,19 @@
-import { getEvent, getEventBySlug } from '@/lib/events';
+import {
+  getEvent,
+  getEventBySlug,
+  getNextEvent,
+  getPreviousEvent
+} from '@/lib/events';
 import { InnerHeader } from '@/components/common/Inner-header';
 import Image from 'next/image';
-import { Calendar, MapPin, Mail, ExternalLink } from 'lucide-react';
+import {
+  Calendar,
+  MapPin,
+  Mail,
+  ExternalLink,
+  ChevronLeft,
+  ChevronRight
+} from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
@@ -18,6 +30,8 @@ export default async function EventPage({
   params: { slug: string };
 }) {
   const event = await getEvent(slug);
+  const nextEvent = await getNextEvent(event.start_date);
+  const previousEvent = await getPreviousEvent(event.start_date);
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
@@ -92,6 +106,52 @@ export default async function EventPage({
                     <Mail className="w-4 h-4 mr-2" />
                     Contact Lucy
                   </Link>
+                </Button>
+              )}
+            </div>
+
+            {/* Pagination */}
+            <div className="flex justify-between items-center mt-12 pt-6 border-t border-gray-200">
+              {previousEvent ? (
+                <Button
+                  asChild
+                  variant="outline"
+                  className="flex items-center gap-2"
+                >
+                  <Link href={`/events/${previousEvent.slug}`}>
+                    <ChevronLeft className="w-4 h-4" />
+                    Previous Event
+                  </Link>
+                </Button>
+              ) : (
+                <Button
+                  variant="outline"
+                  className="flex items-center gap-2 cursor-not-allowed opacity-50 hover:opacity-50"
+                  disabled
+                >
+                  <ChevronLeft className="w-4 h-4" />
+                  Previous Event
+                </Button>
+              )}
+              {nextEvent ? (
+                <Button
+                  asChild
+                  variant="outline"
+                  className="flex items-center gap-2"
+                >
+                  <Link href={`/events/${nextEvent.slug}`}>
+                    Next Event
+                    <ChevronRight className="w-4 h-4" />
+                  </Link>
+                </Button>
+              ) : (
+                <Button
+                  variant="outline"
+                  className="flex items-center gap-2 cursor-not-allowed opacity-50 hover:opacity-50"
+                  disabled
+                >
+                  Next Event
+                  <ChevronRight className="w-4 h-4" />
                 </Button>
               )}
             </div>
