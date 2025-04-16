@@ -4,6 +4,7 @@ import './globals.css';
 import { Header } from '@/components/common/header';
 import { Footer } from '@/components/common/footer';
 import { BackToTop } from '@/components/common/back-to-top';
+import { useScrollToTop } from '@/hooks/useScrollToTop';
 
 const fontSans = FontSans({
   variable: '--font-sans',
@@ -26,6 +27,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  useScrollToTop();
+
   return (
     <html lang="en">
       <body className={`${fontSans.variable} antialiased`}>
