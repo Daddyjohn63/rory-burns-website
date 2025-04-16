@@ -27,7 +27,7 @@ export const CharitiesRowTwo = () => {
               <br></br> We also invest in the essential infrastructure that
               allows the game to flourish, including funding new facilities and
               training new coaches and umpires. Ultimately, we strive to make a
-              difference in people's lives through the power of cricket,
+              difference in people&apos;s lives through the power of cricket,
               fostering community, developing skills, and promoting a lifelong
               love of the game. a lifelong love of the game.
             </p>
