@@ -1,4 +1,4 @@
-import { Home, User, Settings, Briefcase, BookOpen, Mail } from 'lucide-react';
+import { Home, User, Briefcase, BookOpen, Mail } from 'lucide-react';
 import { LucideIcon } from 'lucide-react';
 
 export interface MenuItem {
