@@ -19,11 +19,11 @@ export const CTA = () => {
             <p className="text-gray-600">
               Rory Burns&apos; testimonial year is more than a celebration of
               his remarkable cricketing career. It&apos;s an opportunity to make
-              a lasting impact.<br></br> <br></br> Throughout the year, Rory
-              will be supporting two incredible charities,{' '}
-              <span className="font-bold">GLF Schools&apos; Foundation</span>{' '}
-              and the{' '}
-              <span className="font-bold">Surrey Cricket Foundation</span>
+              a lasting impact by supporting Rory&apos;s good causes.
+              <br></br> <br></br>
+              <span className="font-bold">
+                Please come and join us in what promises to be an exciting year.
+              </span>
             </p>
           </div>
           {/* column 2 */}
@@ -33,7 +33,7 @@ export const CTA = () => {
                 <span className="text-[#9C8561] flex-shrink-0 flex items-center justify-center rounded-full bg-gray-200 p-3">
                   <FaCalendarCheck className="w-6 h-6 md:w-7 md:h-7" />
                 </span>
-                <h3 className="text-2xl font-bold">Six exciting events</h3>
+                <h3 className="text-2xl font-bold">Exciting events</h3>
               </div>
 
               <p className="flex-grow text-white">
