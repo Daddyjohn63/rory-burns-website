@@ -28,10 +28,9 @@ export const CharitiesRowThree = () => {
               testimonial year and beyond, the GLF Schools&apos; Foundation is
               dedicated to breaking down socio-economic barriers that prevent
               young people from accessing life-enriching opportunities.
-              life-enriching opportunities. Established in 2022, the Foundation
-              ensures that all students—regardless of financial background—can
-              explore, experience, and enjoy activities that support their
-              personal development.
+              Established in 2022, the Foundation ensures that all students,
+              regardless of financial background can explore, experience, and
+              enjoy activities that support their personal development.
             </p>
           </div>
         </div>

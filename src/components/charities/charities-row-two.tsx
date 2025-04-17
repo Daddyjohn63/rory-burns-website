@@ -29,7 +29,7 @@ export const CharitiesRowTwo = () => {
               training new coaches and umpires. Ultimately, we strive to make a
               difference in people&apos;s lives through the power of cricket,
               fostering community, developing skills, and promoting a lifelong
-              love of the game. a lifelong love of the game.
+              love of the game.
             </p>
           </div>
         </div>

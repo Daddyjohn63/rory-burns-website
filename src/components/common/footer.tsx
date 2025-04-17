@@ -19,7 +19,7 @@ export const Footer = () => {
 
           {/* Navigation Section */}
           <div className="flex items-center">
-            <Navigation className="hidden md:block" isFooter={true} />
+            <Navigation className="hidden md:block mr-[70px]" isFooter={true} />
           </div>
 
           {/* Social Media Section */}
@@ -35,6 +35,9 @@ export const Footer = () => {
             <p className="text-sm text-white">
               © {currentYear} Rory Burns. All rights reserved.
             </p>
+            <Link href="/privacy-policy" className="text-sm text-white/60">
+              Privacy Policy
+            </Link>
 
             <p className="text-sm text-white/60">
               Website by{' '}

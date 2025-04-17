@@ -20,18 +20,17 @@ export const AboutRowOne = () => {
               England Test team, where he became a cornerstone of the batting
               lineup. Rory has amassed numerous career milestones, leading
               Surrey to a hat-trick of titles from 2022-2024, scoring more than
-              hat-trick of titles from 2022-2024, scoring more than 1,000 runs
-              in 2024 as he became the second most successful captain in the
-              Club’s 180-year history outright with 4 championship titles. Only
-              Stuart Surridge, with five, has won more County Championship
-              titles for Surrey.<br></br>
+              1,000 runs in 2024 as he became the second most successful captain
+              in the Club’s 180-year history outright with 4 championship
+              titles. Only Stuart Surridge, with five, has won more County
+              Championship titles for Surrey.<br></br>
               <br></br> Known for his distinctive technique and unwavering
               focus, Rory has become a fan favourite and an inspiration to
               aspiring cricketers worldwide. Off the field, Rory is a dedicated
-              family man and a passionate advocate for causes that uplift that
-              uplift communities. His Testimonial Year is not just a celebration
-              of his sporting achievements but also a testament to his character
-              and contributions beyond the game.
+              family man and a passionate advocate for causes that uplift
+              communities. His Testimonial Year is not just a celebration of his
+              sporting achievements but also a testament to his character and
+              contributions beyond the game.
             </p>
           </div>
           <div></div>

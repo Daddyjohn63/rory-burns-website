@@ -44,13 +44,6 @@ export const menuItems: MenuItem[] = [
     href: '/contact',
     icon: Mail,
     mainHeader: true
-  },
-  {
-    id: 6,
-    label: 'Privacy Policy',
-    href: '/privacy-policy',
-    icon: Settings,
-    mainHeader: false
   }
 ];
 

@@ -38,7 +38,7 @@ export const CTA = () => {
 
               <p className="flex-grow text-white">
                 From a County Championship match, gala dinners, a T20 and Test
-                match, a Golf day, to a Grand Finale Dinner in the Ashes Suite
+                match, a golf day, to a Grand Finale Dinner in the Ashes Suite
                 at the Oval.
               </p>
               <span className="mt-4 flex items-center gap-2 text-white hover:text-[#866908]">
