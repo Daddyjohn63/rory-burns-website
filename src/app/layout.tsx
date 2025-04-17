@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Source_Sans_3 as FontSans } from 'next/font/google';
 import './globals.css';
+import '@/custom-styles/custom-styles.css';
 import { Header } from '@/components/common/header';
 import { Footer } from '@/components/common/footer';
 import { BackToTop } from '@/components/common/back-to-top';
@@ -34,8 +35,8 @@ export default function RootLayout({
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
       </head>
-      <body className={`${fontSans.variable} antialiased overflow-x-hidden`}>
-        <div className="relative flex flex-col min-h-screen">
+      <body className={`${fontSans.variable} antialiased`}>
+        <div className="relative flex flex-col min-h-screen overflow-x-hidden">
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />

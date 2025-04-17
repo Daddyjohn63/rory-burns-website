@@ -3,8 +3,8 @@ import { ContactRowOne } from '@/components/contact/contact-row-one';
 
 const ContactPage = () => {
   return (
-    <div className="relative w-full">
-      <div className="flex flex-col">
+    <div className="min-h-screen flex flex-col">
+      <div className="flex-1">
         <InnerHeader title="Contact" description="" />
         <ContactRowOne />
       </div>

@@ -1,4 +1,4 @@
-import { Mail } from 'lucide-react';
+import { Link, Mail } from 'lucide-react';
 
 export const ContactRowOne = () => {
   return (
@@ -12,8 +12,10 @@ export const ContactRowOne = () => {
           <div className="flex flex-col gap-6">
             <h3 className="mx-auto mt-6  text-pretty ">Lucy Donovan </h3>
             <div className="flex items-center justify-center gap-2">
-              <Mail className="w-6 h-6 text-[#866908]" />
-              <p className="text-xl">me@lucydonovan.com</p>
+              <Link href="mailto:me@lucydonovan.com">
+                <Mail className="w-6 h-6 text-[#866908]" />
+                <p className="text-xl">me@lucydonovan.com</p>
+              </Link>
             </div>
           </div>
         </div>
