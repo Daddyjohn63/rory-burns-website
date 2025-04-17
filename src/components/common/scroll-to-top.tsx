@@ -1,8 +1,8 @@
-'use client';
+// 'use client';
 
-import { useScrollToTop } from '@/hooks/useScrollToTop';
+// import { useScrollToTop } from '@/hooks/useScrollToTop';
 
-export const ScrollToTop = () => {
-  useScrollToTop();
-  return null;
-};
+// export const ScrollToTop = () => {
+//   useScrollToTop();
+//   return null;
+// };

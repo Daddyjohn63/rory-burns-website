@@ -37,7 +37,7 @@ export const Header: FC = () => {
     >
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-24 items-center">
-          <div className="flex-shrink-0">
+          <div className="w-1/4">
             <Link href="/">
               <Logo />
             </Link>
@@ -45,7 +45,7 @@ export const Header: FC = () => {
           <div className="flex-1 flex justify-center">
             <Navigation />
           </div>
-          <div className="flex-shrink-0 flex items-center space-x-4">
+          <div className="w-1/4 flex justify-end items-center space-x-4">
             <div className="md:hidden">
               <MobileSideBar />
             </div>

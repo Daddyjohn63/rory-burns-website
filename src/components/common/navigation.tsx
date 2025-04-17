@@ -27,7 +27,7 @@ export const Navigation = ({
   return (
     <nav
       className={cn(
-        'flex flex-col md:flex-row gap-4 items-center justify-center md:space-x-4 text-white w-full',
+        'hidden md:flex flex-row gap-4 items-center justify-center md:space-x-4 text-white w-full',
         className
       )}
     >
@@ -36,7 +36,7 @@ export const Navigation = ({
           key={link.href}
           href={link.href}
           className={cn(isActive(link.href) && 'text-yellow-500')}
-          scroll={false}
+          scroll={true}
         >
           {link.label}
         </Link>
