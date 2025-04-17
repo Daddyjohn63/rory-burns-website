@@ -51,13 +51,6 @@ export const menuItems: MenuItem[] = [
     href: '/privacy-policy',
     icon: Settings,
     mainHeader: false
-  },
-  {
-    id: 7,
-    label: 'Terms of Service',
-    href: '/terms-of-service',
-    icon: Settings,
-    mainHeader: false
   }
 ];
 

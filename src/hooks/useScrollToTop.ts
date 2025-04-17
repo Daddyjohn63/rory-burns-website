@@ -1,12 +1,12 @@
-'use client';
+// 'use client';
 
-import { useEffect } from 'react';
-import { usePathname } from 'next/navigation';
+// import { useEffect } from 'react';
+// import { usePathname } from 'next/navigation';
 
-export const useScrollToTop = () => {
-  const pathname = usePathname();
+// export const useScrollToTop = () => {
+//   const pathname = usePathname();
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-};
+//   useEffect(() => {
+//     window.scrollTo(0, 0);
+//   }, [pathname]);
+// };

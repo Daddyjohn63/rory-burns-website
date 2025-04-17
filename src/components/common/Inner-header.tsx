@@ -5,7 +5,7 @@ interface InnerHeaderProps {
 
 export const InnerHeader = ({ title, description }: InnerHeaderProps) => {
   return (
-    <header className="relative h-[250px] w-full bg-black">
+    <header className="relative h-[200px] md:h-[250px] w-full bg-black">
       <div className="absolute inset-0">
         <svg className="h-full w-full stroke-white/30" aria-hidden="true">
           {/* <defs>

@@ -27,7 +27,7 @@ export const Navigation = ({
   return (
     <nav
       className={cn(
-        'flex flex-col md:flex-row gap-4 items-center md:space-x-4 text-white',
+        'flex flex-col md:flex-row gap-4 items-center justify-center md:space-x-4 text-white w-full',
         className
       )}
     >

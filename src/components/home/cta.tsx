@@ -14,7 +14,7 @@ export const CTA = () => {
           {/* column 1 */}
           <div className="w-full md:w-1/3 p-6 md:mt-4 rounded-lg shadow-sm">
             <h3 className="text-2xl font-semibold mb-4 text-[#866908]">
-              Check out our events, good causes and more
+              Check out our events and good causes
             </h3>
             <p className="text-gray-600">
               Rory Burns&apos; testimonial year is more than a celebration of
@@ -23,9 +23,7 @@ export const CTA = () => {
               will be supporting two incredible charities,{' '}
               <span className="font-bold">GLF Schools&apos; Foundation</span>{' '}
               and the{' '}
-              <span className="font-bold">
-                Professional Cricketers&apos; Association (PCA) Trust
-              </span>
+              <span className="font-bold">Surrey Cricket Foundation</span>
             </p>
           </div>
           {/* column 2 */}
@@ -63,10 +61,10 @@ export const CTA = () => {
 
               <p className="flex-grow text-white">
                 Rory will be supporting two incredible charities: GLF
-                Schools&apos; Foundation and the Professional Cricketers&apos;
-                Association (PCA) Trust. These organisations reflect Rory&apos;s
-                passion for education, community development, and the well-being
-                of current and former cricketers.
+                Schools&apos; Foundation and the Surrey Cricket Foundation.
+                These organisations reflect Rory&apos;s passion for education,
+                community development, and the well-being of current and former
+                cricketers.
               </p>
               <span className="mt-4 flex items-center gap-2 text-white hover:text-[#9C8561]">
                 Find out more

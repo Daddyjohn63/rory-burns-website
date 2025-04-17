@@ -83,8 +83,8 @@ export const CTAAbout = () => {
 
               <p className="flex-grow text-white">
                 Rory will be supporting two incredible charities: GLF
-                Schools&apos; Foundation and the Professional Cricketers&apos;
-                Association (PCA) Trust. <br></br>
+                Schools&apos; Foundation and the Surrey Cricket Foundation.{' '}
+                <br></br>
                 <br></br>These organisations reflect Rory&apos;s passion for
                 education, community development, and the well-being of current
                 and former cricketers.

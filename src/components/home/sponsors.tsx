@@ -53,7 +53,7 @@ export const Sponsors: FC = () => {
           {/* Sponsor 5 */}
           <div className="flex items-center justify-center p-4 bg-gray-50 rounded-lg">
             <Image
-              src="/home/levy.png"
+              src="/home/heineken.svg"
               alt="heineken"
               width={150}
               height={64}

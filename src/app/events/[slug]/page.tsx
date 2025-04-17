@@ -104,7 +104,7 @@ export default async function EventPage({
                     rel="noopener noreferrer"
                   >
                     <Mail className="w-4 h-4 mr-2" />
-                    Contact Lucy
+                    Click to email
                   </Link>
                 </Button>
               )}
@@ -126,7 +126,7 @@ export default async function EventPage({
               ) : (
                 <Button
                   variant="outline"
-                  className="flex items-center gap-2 cursor-not-allowed opacity-50 hover:opacity-50"
+                  className="flex items-center gap-2 cursor-not-allowed"
                   disabled
                 >
                   <ChevronLeft className="w-4 h-4" />
@@ -147,7 +147,7 @@ export default async function EventPage({
               ) : (
                 <Button
                   variant="outline"
-                  className="flex items-center gap-2 cursor-not-allowed opacity-50 hover:opacity-50"
+                  className="flex items-center gap-2 cursor-not-allowed"
                   disabled
                 >
                   Next Event
