@@ -70,7 +70,7 @@ export const CTAAbout = () => {
             </div>
           </Link>
           {/* column 3 */}
-          <Link href="/events" className="block w-full md:w-1/3">
+          <Link href="/charities" className="block w-full md:w-1/3">
             <div className=" relative h-full flex flex-col p-6 bg-gradient-to-br from-[#000000] via-[#000000]/90 to-[#000000]/80 rounded-lg border border-gray-200 shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer">
               <div className="flex items-center gap-4 mb-4">
                 <span className="text-[#9C8561] flex-shrink-0 flex items-center justify-center rounded-full bg-gray-200 p-3">

@@ -38,8 +38,8 @@ export const CTA = () => {
 
               <p className="flex-grow text-white">
                 From a County Championship match, gala dinners, a T20 and Test
-                match, a Golf day, rounded by a Grand Finale Dinner in the Ashes
-                Suite at the Oval.
+                match, a Golf day, to a Grand Finale Dinner in the Ashes Suite
+                at the Oval.
               </p>
               <span className="mt-4 flex items-center gap-2 text-white hover:text-[#866908]">
                 Find out more
@@ -48,7 +48,7 @@ export const CTA = () => {
             </div>
           </Link>
           {/* column 3 */}
-          <Link href="/events" className="block w-full md:w-1/3">
+          <Link href="/charities" className="block w-full md:w-1/3">
             <div className=" relative h-full flex flex-col p-6 bg-gradient-to-br from-[#000000] via-[#000000]/90 to-[#000000]/80 rounded-lg border border-gray-200 shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer">
               <div className="flex items-center gap-4 mb-4">
                 <span className="text-[#9C8561] flex-shrink-0 flex items-center justify-center rounded-full bg-gray-200 p-3">

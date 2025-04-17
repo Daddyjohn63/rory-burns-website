@@ -9,7 +9,7 @@ link: 'https://www.kiaoval.com/tickets'
 email: ''
 ---
 
-This year's four-day Division 1 match vs Yorkshire is dedicated to Rory Burns, so come down and support the Testimonial at The Kia Oval. The match is scheduled for May 16th to 19th with a daily 11am start.
+This year's four-day Championship match vs Yorkshire is dedicated to Rory Burns, so come down and support the Testimonial at The Kia Oval. The match is scheduled for May 16th to 19th with a daily 11am start.
 
 Special Rory Burns Testimonial merchandise will be available in The Surrey Shop at The Oval throughout the game.
 

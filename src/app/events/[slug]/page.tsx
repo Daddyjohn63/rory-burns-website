@@ -46,7 +46,7 @@ export default async function EventPage({
     <section className="min-h-screen flex flex-col">
       <div className="flex-1">
         <InnerHeader title={event.title} description="" />
-        <div className="container mx-auto max-w-7xl py-12 mb-16 px-4 sm:px-6 lg:px-8 mt-24">
+        <div className="container mx-auto max-w-7xl py-12 mb-16 px-4 sm:px-6 lg:px-8 md:mt-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Image Section */}
             <div className="relative h-[400px] lg:h-[500px] w-full">

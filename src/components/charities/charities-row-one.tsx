@@ -10,11 +10,11 @@ export const CharitiesRowOne = () => {
             Rory Burns&apos; testimonial year is more than a celebration of his
             remarkable cricketing career—it&apos;s an opportunity to make a
             lasting impact. Throughout the year, Rory will be supporting two
-            incredible charities: GLF Schools&apos; Foundation and the
-            Professional Cricketers&apos; Association (PCA) Trust. These
-            organisations reflect Rory&apos;s passion for education, community
-            for education, community development, and the well-being of current
-            and former cricketers.
+            incredible charities:{' '}
+            <span className="font-bold">GLF Schools&apos; Foundation</span> and
+            the <span className="font-bold">Surrey Cricket Foundation</span>.
+            These organisations reflect Rory&apos;s passion for education and
+            community development.
           </p>
         </div>
       </div>

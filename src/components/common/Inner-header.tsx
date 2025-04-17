@@ -5,7 +5,7 @@ interface InnerHeaderProps {
 
 export const InnerHeader = ({ title, description }: InnerHeaderProps) => {
   return (
-    <header className="relative h-[200px] md:h-[250px] w-full bg-black">
+    <header className="relative h-[200px] md:h-[250px]  w-full bg-black">
       <div className="absolute inset-0">
         <svg className="h-full w-full stroke-white/30" aria-hidden="true">
           {/* <defs>
@@ -50,8 +50,8 @@ export const InnerHeader = ({ title, description }: InnerHeaderProps) => {
       </div>
 
       {/* Content */}
-      <div className="relative flex flex-col items-center justify-center h-full gap-4">
-        <h1 className="text-5xl font-bold text-center mt-10 px-4 text-white">
+      <div className="relative flex flex-col items-center justify-center h-full gap-6">
+        <h1 className="text-4xl md:text-5xl font-bold text-center mt-10 px-4 text-white">
           {title}
         </h1>
         <p className="text-white/70 text-xl text-center px-4 lg:w-1/2">
