@@ -1,6 +1,5 @@
 import { InnerHeader } from '@/components/common/Inner-header';
 import { PrivacyRowOne } from '@/components/common/privacy';
-import { ContactRowOne } from '@/components/contact/contact-row-one';
 
 const PrivacyPage = () => {
   return (

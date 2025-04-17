@@ -1,5 +1,3 @@
-import { Link, Mail } from 'lucide-react';
-
 export const PrivacyRowOne = () => {
   return (
     <section className="container mx-auto">
