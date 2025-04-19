@@ -5,6 +5,7 @@ import {
   getPreviousEvent
 } from '@/lib/events';
 import { InnerHeader } from '@/components/common/Inner-header';
+import { Gallery } from '@/components/events/gallery';
 import Image from 'next/image';
 import {
   Calendar,
@@ -111,53 +112,58 @@ export default async function EventPage({
                   </Button>
                 )}
               </div>
-
-              {/* Pagination */}
-              <div className="flex justify-between items-center mt-12 pt-6 border-t border-gray-200">
-                {previousEvent ? (
-                  <Button
-                    asChild
-                    variant="outline"
-                    className="flex items-center gap-2"
-                  >
-                    <Link href={`/events/${previousEvent.slug}`}>
-                      <ChevronLeft className="w-4 h-4" />
-                      Previous Event
-                    </Link>
-                  </Button>
-                ) : (
-                  <Button
-                    variant="outline"
-                    className="flex items-center gap-2 cursor-not-allowed"
-                    disabled
-                  >
-                    <ChevronLeft className="w-4 h-4" />
-                    Previous Event
-                  </Button>
-                )}
-                {nextEvent ? (
-                  <Button
-                    asChild
-                    variant="outline"
-                    className="flex items-center gap-2"
-                  >
-                    <Link href={`/events/${nextEvent.slug}`}>
-                      Next Event
-                      <ChevronRight className="w-4 h-4" />
-                    </Link>
-                  </Button>
-                ) : (
-                  <Button
-                    variant="outline"
-                    className="flex items-center gap-2 cursor-not-allowed"
-                    disabled
-                  >
-                    Next Event
-                    <ChevronRight className="w-4 h-4" />
-                  </Button>
-                )}
-              </div>
             </div>
+          </div>
+
+          {/* Pagination */}
+          <div className="flex justify-between items-center mt-12 pt-6 border-t border-gray-200">
+            {previousEvent ? (
+              <Button
+                asChild
+                variant="outline"
+                className="flex items-center gap-2"
+              >
+                <Link href={`/events/${previousEvent.slug}`}>
+                  <ChevronLeft className="w-4 h-4" />
+                  Previous Event
+                </Link>
+              </Button>
+            ) : (
+              <Button
+                variant="outline"
+                className="flex items-center gap-2 cursor-not-allowed"
+                disabled
+              >
+                <ChevronLeft className="w-4 h-4" />
+                Previous Event
+              </Button>
+            )}
+            {nextEvent ? (
+              <Button
+                asChild
+                variant="outline"
+                className="flex items-center gap-2"
+              >
+                <Link href={`/events/${nextEvent.slug}`}>
+                  Next Event
+                  <ChevronRight className="w-4 h-4" />
+                </Link>
+              </Button>
+            ) : (
+              <Button
+                variant="outline"
+                className="flex items-center gap-2 cursor-not-allowed"
+                disabled
+              >
+                Next Event
+                <ChevronRight className="w-4 h-4" />
+              </Button>
+            )}
+          </div>
+
+          {/* Gallery Section */}
+          <div className="mt-16">
+            <Gallery slug={slug} title={event.title} />
           </div>
         </div>
       </div>

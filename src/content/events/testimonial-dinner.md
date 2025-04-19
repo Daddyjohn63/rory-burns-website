@@ -16,3 +16,5 @@ Mark Church was in charge of making sure we raised lots of money through the auc
 
 We danced the night away, DJ Emma Conybeare and sax player Julia Harrison providing the
 tunes!
+
+You can see some images from the event below.

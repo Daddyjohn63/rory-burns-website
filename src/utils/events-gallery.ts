@@ -1,4 +1,4 @@
-type EventGallery = {
+export type EventGallery = {
   slug: string;
   images: string[];
 };
