@@ -53,6 +53,7 @@ export default async function EventPage({
               <Image
                 src={event.image}
                 alt={event.title}
+                sizes="(max-width: 700px) 100vw, 700px"
                 fill
                 className="object-cover rounded-lg"
                 priority
