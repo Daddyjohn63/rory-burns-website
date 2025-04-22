@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.WEBSITE_URL;
+  const baseUrl = 'https://roryburns.co.uk';
 
   // Static routes
   const staticRoutes = ['', '/about', '/events', '/charities', '/contact'].map(
