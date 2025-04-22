@@ -17,12 +17,38 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import { Metadata } from 'next';
 
 export async function generateStaticParams() {
   const slugs = await getEventBySlug();
   return slugs.map(slug => ({
     slug: slug
   }));
+}
+
+export async function generateMetadata({
+  params: { slug }
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  const event = await getEvent(slug);
+
+  return {
+    title: `${event.title} | Rory Burns Events`,
+    description: event.body.replace(/<[^>]*>/g, '').slice(0, 160),
+    openGraph: {
+      title: event.title,
+      description: event.body.replace(/<[^>]*>/g, '').slice(0, 160),
+      images: [
+        {
+          url: event.image,
+          width: 1200,
+          height: 630,
+          alt: event.title
+        }
+      ]
+    }
+  };
 }
 
 export default async function EventPage({

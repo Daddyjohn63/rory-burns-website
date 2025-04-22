@@ -11,6 +11,12 @@ import {
 } from '@/components/ui/card';
 import { InnerHeader } from '@/components/common/Inner-header';
 import { Calendar, MapPin } from 'lucide-react';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Events | Rory Burns Testimonial Year',
+  description: 'Come and support us at our events'
+};
 
 const formatDate = (dateString: string) => {
   const date = new Date(dateString);

@@ -1,3 +1,5 @@
+//add new images for each event as needed. the slug should match exactly with the event slug in the content folder
+
 export type EventGallery = {
   slug: string;
   images: string[];

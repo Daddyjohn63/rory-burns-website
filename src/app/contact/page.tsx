@@ -1,5 +1,11 @@
 import { InnerHeader } from '@/components/common/Inner-header';
 import { ContactRowOne } from '@/components/contact/contact-row-one';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Contact | Rory Burns Testimonial Year',
+  description: 'Contact us for more information'
+};
 
 const ContactPage = () => {
   return (
