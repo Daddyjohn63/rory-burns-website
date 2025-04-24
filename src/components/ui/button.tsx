@@ -19,7 +19,7 @@ const buttonVariants = cva(
           'bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80',
         ghost: 'hover:bg-accent hover:text-accent-foreground',
         link: 'text-primary underline-offset-4 hover:underline',
-        rory: 'text-white relative mt-6 text-base sm:text-lg lg:text-xl rounded-full px-8 sm:px-10 lg:px-12 py-6 sm:py-5 lg:py-8 lg:mt-2 bg-gradient-to-br from-[#9C8561] via-[#aa871d] to-[#d4be75] hover:from-[#d4be75] hover:via-[#aa871d] hover:to-[#9C8561] transition-all duration-500 ease-in-out',
+        rory: 'text-white relative mt-6 text-base sm:text-lg lg:text-xl rounded-full px-8 sm:px-10 lg:px-12 py-8 sm:py-6 lg:py-6 lg:mt-2 h-auto min-h-[3.5rem] sm:min-h-[2rem] lg:min-h-[3.5rem] bg-gradient-to-br from-[#9C8561] via-[#aa871d] to-[#d4be75] hover:from-[#d4be75] hover:via-[#aa871d] hover:to-[#9C8561] transition-all duration-500 ease-in-out',
         event:
           'text-white relative text-base sm:text-lg lg:text-xl rounded-full px-8 sm:px-10 lg:px-12 py-4 sm:py-4 lg:py-6 bg-gradient-to-br from-[#9C8561] via-[#aa871d] to-[#d4be75] hover:from-[#d4be75] hover:via-[#aa871d] hover:to-[#9C8561] transition-all duration-500 ease-in-out'
       },

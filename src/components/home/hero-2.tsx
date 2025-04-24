@@ -62,11 +62,19 @@ export default function Hero2() {
                 Join us as we honour Rory&apos;s remarkable journey and support
                 charities close to his heart
               </p>
-              <div className="mt-10 flex items-center justify-center gap-x-6">
+              <div className="mt-10 flex flex-col md:flex-row items-center justify-center gap-x-6">
                 <Button asChild variant="rory" className="font-bold">
                   <a href="/events">
                     <span className="font-bold text-xl text-white">
                       Support our events
+                    </span>
+                    <ArrowRight className="animate-pulse" />
+                  </a>
+                </Button>
+                <Button asChild variant="rory" className="font-bold">
+                  <a href="/charities#donate" className="scroll-mt-[120px]">
+                    <span className="font-bold text-xl text-white">
+                      Donate to our charities
                     </span>
                     <ArrowRight className="animate-pulse" />
                   </a>

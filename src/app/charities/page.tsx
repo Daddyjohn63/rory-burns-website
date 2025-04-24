@@ -3,6 +3,7 @@ import { InnerHeader } from '@/components/common/Inner-header';
 import { CharitiesRowTwo } from '@/components/charities/charities-row-two';
 import { CharitiesRowThree } from '@/components/charities/charities-row-three';
 import { Metadata } from 'next';
+import { DonateSection } from '@/components/charities/donate-section';
 
 export const metadata: Metadata = {
   title: 'Charities | Rory Burns Testimonial Year',
@@ -19,6 +20,7 @@ export default function CharitiesPage() {
       <CharitiesRowOne />
       <CharitiesRowTwo />
       <CharitiesRowThree />
+      <DonateSection />
     </div>
   );
 }

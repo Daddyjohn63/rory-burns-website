@@ -9,7 +9,7 @@ export const CharitiesRowThree = () => {
             <Image
               src="/charities/glf-schools-foundation.svg"
               alt="Surrey Cricket Foundation"
-              className="w-full h-auto rounded-lg shadow-lg"
+              className="md:w-full h-auto rounded-lg shadow-lg"
               width={1200}
               height={675}
             />
