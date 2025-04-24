@@ -1,4 +1,11 @@
-import { Home, User, Briefcase, BookOpen, Mail } from 'lucide-react';
+import {
+  Home,
+  User,
+  Briefcase,
+  BookOpen,
+  Mail,
+  ShoppingCart
+} from 'lucide-react';
 import { LucideIcon } from 'lucide-react';
 
 export interface MenuItem {
@@ -40,6 +47,13 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 5,
+    label: 'Merchandise',
+    href: '/merchandise',
+    icon: ShoppingCart,
+    mainHeader: true
+  },
+  {
+    id: 6,
     label: 'Contact',
     href: '/contact',
     icon: Mail,
