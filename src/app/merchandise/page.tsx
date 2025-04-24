@@ -77,7 +77,7 @@ const Merchandise = () => {
         description="Rory Burns Testimonial Merchandise"
       />
       <div className="container mx-auto px-4 py-8 justify-center items-center flex flex-col">
-        <h2 className="text-4xl font-bold text-center mb-8">Merchandise</h2>
+        {/* <h2 className="text-4xl font-bold text-center mb-8">Merchandise</h2> */}
         <p className="text-center mb-4 text-lg max-w-2xl">
           We have made a range of merchandise available through the shop at the
           Kia Oval.
