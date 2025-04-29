@@ -17,6 +17,12 @@ export const metadata: Metadata = {
     default: 'Rory Burns Testimonial Year',
     template: '%s | Rory Burns Testimonial Year'
   },
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    minimumScale: 1,
+    maximumScale: 5
+  },
   description:
     'Join us as we honour Rory&apos;s remarkable journey and support charities close to his heart',
   icons: {
