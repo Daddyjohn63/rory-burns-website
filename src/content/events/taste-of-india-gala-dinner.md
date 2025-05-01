@@ -3,7 +3,7 @@ image: '/events/dinner.jpg'
 title: 'Taste of India Gala Black Tie Dinner '
 start_date: '2025-06-19'
 end_date: ''
-description: 'Join Rory Burns, Kumar Sangrakkara, Tom Curran and Sam Curran, Sam Billings, Jason Roy and Jos Butler... '
+description: 'Join Rory Burns, Kumar Sangakkara, Tom Curran and Sam Curran, Sam Billings, Jason Roy and Jos Butler... '
 venue: Cutlers’ Hall
 link: ''
 email: 'me@lucydonovan.com'
