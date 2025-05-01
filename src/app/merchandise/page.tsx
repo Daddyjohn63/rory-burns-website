@@ -3,6 +3,14 @@ import { ProductCard } from '@/components/merchandise/product-card';
 import { Product } from '@/types/product';
 import Link from 'next/link';
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Merchandise | Rory Burns Testimonial Year',
+  description:
+    'We have made a range of merchandise available through the shop at the Kia Oval.'
+};
+
 const productData: Product[] = [
   {
     id: 1,
