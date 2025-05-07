@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Source_Sans_3 as FontSans } from 'next/font/google';
 import './globals.css';
 import '@/custom-styles/custom-styles.css';
@@ -12,16 +12,20 @@ const fontSans = FontSans({
   weight: ['200', '300', '400', '500', '600', '700', '800']
 });
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  minimumScale: 1,
+  maximumScale: 5
+};
+
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
+  ),
   title: {
     default: 'Rory Burns Testimonial Year',
     template: '%s | Rory Burns Testimonial Year'
-  },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    minimumScale: 1,
-    maximumScale: 5
   },
   description:
     'Join us as we honour Rory&apos;s remarkable journey and support charities close to his heart',
