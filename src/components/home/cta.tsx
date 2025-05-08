@@ -2,15 +2,32 @@ import { FaCalendarCheck } from 'react-icons/fa';
 
 import Link from 'next/link';
 import { ArrowRight, Mail } from 'lucide-react';
+import { MotionDiv, MotionH2, MotionSection } from '../common/motion-wrapper';
+import { containerVariants } from '@/utils/constants';
 
 export const CTA = () => {
   return (
-    <section className="relative shadow-section bg-section-gradient py-12 md:py-24">
+    <MotionSection
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      className="relative shadow-section bg-section-gradient py-12 md:py-24"
+    >
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 className=" font-bold md:mb-12 md:text-center pl-6 text-[#9C8561]">
+        <MotionH2
+          initial={{ y: 15, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className=" font-bold md:mb-12 md:text-center pl-6 text-[#9C8561]"
+        >
           We have an exciting year planned!
-        </h2>
-        <div className="flex flex-col md:flex-row gap-8">
+        </MotionH2>
+        <MotionDiv
+          initial={{ y: 20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="flex flex-col md:flex-row gap-8"
+        >
           {/* column 1 */}
           <div className="w-full md:w-1/3 p-6 md:mt-4 rounded-lg shadow-sm">
             <h3 className="text-2xl font-semibold mb-4 text-[#866908]">
@@ -72,7 +89,7 @@ export const CTA = () => {
               </span>
             </div>
           </Link>
-        </div>
+        </MotionDiv>
       </div>
       <div className="container flex flex-col gap-4 items-center justify-center mt-12 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <p className="text-center max-w-xl text-gray-700 text-lg font-semibold">
@@ -84,6 +101,6 @@ export const CTA = () => {
           <Link href="mailto:lucy@roryburns.com">me@lucydonovan.com</Link>
         </div>
       </div>
-    </section>
+    </MotionSection>
   );
 };

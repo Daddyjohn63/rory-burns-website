@@ -4,12 +4,23 @@ import Image from 'next/image';
 import { Button } from '../ui/button';
 import { ArrowRight } from 'lucide-react';
 import { useState } from 'react';
+import { MotionDiv, MotionH1 } from '../common/motion-wrapper';
+import {
+  itemVariants,
+  containerVariants,
+  buttonVariants
+} from '@/utils/constants';
 
 export default function Hero2() {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
-    <div className="bg-black">
+    <MotionDiv
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      className="bg-black"
+    >
       <div className="relative isolate overflow-hidden pt-36">
         <div
           className="absolute left-[calc(50%-4rem)] top-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-45rem)] xl:left-[calc(50%-24rem)]"
@@ -42,7 +53,7 @@ export default function Hero2() {
             sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, (max-width: 1080px) 1080px, (max-width: 1200px) 1200px, 1920px"
             placeholder="blur"
             blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx4eHRoaHSQtJSEkLzYvLy0vLzYvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLz/2wBDAR0dHh4eHRoaHSQtJSEkLzYvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLz/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
-            onLoadingComplete={() => setIsLoading(false)}
+            onLoad={() => setIsLoading(false)}
           />
         </div>
         <div className="absolute inset-0 -z-10 bg-black/50" />
@@ -50,19 +61,29 @@ export default function Hero2() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
             <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-              <div className="relative rounded-full px-3 py-1 text-white ring-1 ring-yellow-600">
+              <MotionDiv
+                variants={itemVariants}
+                className="relative rounded-full px-3 py-1 text-white ring-1 ring-yellow-600"
+              >
                 A Testimonial Year of Cricket and Community
-              </div>
+              </MotionDiv>
             </div>
             <div className="text-center">
-              <h1 className="text-balance text-5xl font-semibold tracking-wide md:leading-loose sm:text-7xl">
+              <MotionH1
+                variants={itemVariants}
+                className="text-balance text-5xl font-semibold tracking-wide md:leading-loose sm:text-7xl"
+              >
                 Celebrating Rory Burns
-              </h1>
+              </MotionH1>
               <p className="mt-8 text-pretty text-lg font-medium text-white sm:text-xl/8">
                 Join us as we honour Rory&apos;s remarkable journey and support
                 charities close to his heart
               </p>
-              <div className="mt-10 flex flex-col md:flex-row items-center justify-center gap-x-6">
+              <MotionDiv
+                variants={itemVariants}
+                whileHover={buttonVariants}
+                className="mt-10 flex flex-col md:flex-row items-center justify-center gap-x-6"
+              >
                 <Button asChild variant="rory" className="font-bold">
                   <a href="/events">
                     <span className="font-bold text-xl text-white">
@@ -79,7 +100,7 @@ export default function Hero2() {
                     <ArrowRight className="animate-pulse" />
                   </a>
                 </Button>
-              </div>
+              </MotionDiv>
             </div>
           </div>
         </div>
@@ -96,6 +117,6 @@ export default function Hero2() {
           />
         </div>
       </div>
-    </div>
+    </MotionDiv>
   );
 }

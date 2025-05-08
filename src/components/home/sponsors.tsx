@@ -1,14 +1,29 @@
 import Image from 'next/image';
 import { FC } from 'react';
+import { MotionDiv, MotionH2, MotionSection } from '../common/motion-wrapper';
+import { containerVariants, listVariants } from '@/utils/constants';
 
 export const Sponsors: FC = () => {
   return (
-    <section className="bg-white py-12 md:py-24">
+    <MotionSection
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      className="bg-white py-12 md:py-24"
+    >
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold mb-12 text-center text-[#866908]">
+        <MotionH2
+          initial={{ y: 15, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="text-3xl font-bold mb-12 text-center text-[#866908]"
+        >
           A Special Thanks to Our Sponsors
-        </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+        </MotionH2>
+        <MotionDiv
+          variants={listVariants}
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8"
+        >
           {/* Sponsor 1 */}
           <div className="flex items-center justify-center p-4 bg-gray-50 rounded-lg">
             <Image
@@ -60,8 +75,8 @@ export const Sponsors: FC = () => {
               className="object-contain"
             />
           </div>
-        </div>
+        </MotionDiv>
       </div>
-    </section>
+    </MotionSection>
   );
 };

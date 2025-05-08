@@ -1,3 +1,6 @@
+import { MotionDiv, MotionH1, MotionP } from './motion-wrapper';
+import { containerVariants } from '@/utils/constants';
+
 interface InnerHeaderProps {
   title: string;
   description: string;
@@ -6,7 +9,12 @@ interface InnerHeaderProps {
 export const InnerHeader = ({ title, description }: InnerHeaderProps) => {
   return (
     <header className="relative h-[200px] md:h-[250px]  w-full bg-black">
-      <div className="absolute inset-0">
+      <MotionDiv
+        variants={containerVariants}
+        className="absolute inset-0"
+        initial="hidden"
+        animate="visible"
+      >
         <svg className="h-full w-full stroke-white/30" aria-hidden="true">
           {/* <defs>
             <pattern
@@ -47,17 +55,32 @@ export const InnerHeader = ({ title, description }: InnerHeaderProps) => {
             }}
           />
         </div>
-      </div>
+      </MotionDiv>
 
       {/* Content */}
-      <div className="relative flex flex-col items-center justify-center h-full gap-6">
-        <h1 className="text-4xl md:text-5xl font-bold text-center mt-10 px-4 text-white">
+      <MotionDiv
+        variants={containerVariants}
+        className="relative flex flex-col items-center justify-center h-full gap-6"
+        initial="hidden"
+        animate="visible"
+      >
+        <MotionH1
+          initial={{ y: 15, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="text-4xl md:text-5xl font-bold text-center mt-10 px-4 text-white"
+        >
           {title}
-        </h1>
-        <p className="text-white/70 text-xl text-center px-4 lg:w-1/2">
+        </MotionH1>
+        <MotionP
+          initial={{ y: 15, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="text-white/70 text-xl text-center px-4 lg:w-1/2"
+        >
           {description}
-        </p>
-      </div>
+        </MotionP>
+      </MotionDiv>
     </header>
   );
 };
