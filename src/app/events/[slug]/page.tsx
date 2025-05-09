@@ -147,7 +147,7 @@ export default async function EventPage({
               <Button
                 asChild
                 variant="outline"
-                className="flex items-center gap-2"
+                className="flex items-center gap-2 bg-black hover:bg-black/80 hover:text-white text-white"
               >
                 <Link href={`/events/${previousEvent.slug}`}>
                   <ChevronLeft className="w-4 h-4" />
@@ -157,7 +157,7 @@ export default async function EventPage({
             ) : (
               <Button
                 variant="outline"
-                className="flex items-center gap-2 cursor-not-allowed"
+                className="flex items-center gap-2 cursor-not-allowed bg-black hover:bg-black/80 hover:text-white text-white"
                 disabled
               >
                 <ChevronLeft className="w-4 h-4" />
@@ -168,7 +168,7 @@ export default async function EventPage({
               <Button
                 asChild
                 variant="outline"
-                className="flex items-center gap-2"
+                className="flex items-center gap-2 bg-black hover:bg-black/80 hover:text-white text-white"
               >
                 <Link href={`/events/${nextEvent.slug}`}>
                   Next Event
@@ -178,7 +178,7 @@ export default async function EventPage({
             ) : (
               <Button
                 variant="outline"
-                className="flex items-center gap-2 cursor-not-allowed"
+                className="flex items-center gap-2 cursor-not-allowed bg-black hover:bg-black/80 hover:text-white text-white"
                 disabled
               >
                 Next Event
