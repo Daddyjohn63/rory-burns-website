@@ -69,7 +69,7 @@ export const Donate = () => {
           <span className="font-bold flex items-center gap-1">
             40-05-20
             <button
-              onClick={() => copyToClipboard('40-05-20', 'accountNumber')}
+              onClick={() => copyToClipboard('82307235', 'accountNumber')}
               className="p-1 hover:bg-gray-200 bg-gray-100 rounded-full transition-colors"
               title="Copy to clipboard"
             >
@@ -87,7 +87,7 @@ export const Donate = () => {
           <span className="font-bold flex items-center gap-1">
             82307235
             <button
-              onClick={() => copyToClipboard('82307235', 'sortCode')}
+              onClick={() => copyToClipboard('40-05-20', 'sortCode')}
               className="p-1 hover:bg-gray-200 bg-gray-100 rounded-full transition-colors"
               title="Copy to clipboard"
             >
