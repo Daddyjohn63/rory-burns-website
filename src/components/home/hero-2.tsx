@@ -59,7 +59,7 @@ export default function Hero2() {
         <div className="absolute inset-0 -z-10 bg-black/50" />
 
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
+          <div className="mx-auto max-w-3xl pt-4 pb-16 sm:py-48 lg:py-56">
             <div className="hidden sm:mb-8 sm:flex sm:justify-center">
               <MotionDiv
                 variants={itemVariants}
