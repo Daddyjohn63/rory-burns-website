@@ -33,7 +33,6 @@ export const ContactRowOne = () => {
             </p>
             <p className="text-xl">David Plowman - Chairman</p>
             <p className="text-xl">Crispin Lyden-Cowen - Treasurer</p>
-            <p className="text-xl">Simon Dyson - Committee Member</p>
             <p className="text-xl">Arun Harinath - Committee Member</p>
             <p className="text-xl">Tom Jewell - Committee Member</p>
             <p className="text-xl">Ian Geddes - Committee Member</p>
