@@ -16,18 +16,15 @@ export const eventData: EventGallery[] = [
       '/events/gallery/testimonial-dinner/testimonial-dinner-5.jpg',
       '/events/gallery/testimonial-dinner/testimonial-dinner-6.jpg'
     ]
+  },
+  {
+    slug: 'county-championship',
+    images: [
+      '/events/gallery/county-championship/surrey-yorkshire-1.jpg',
+      '/events/gallery/county-championship/surrey-yorkshire-2.jpg',
+      '/events/gallery/county-championship/surrey-yorkshire-3.jpg'
+    ]
   }
-  // {
-  //   slug: 'county-championship',
-  //   images: [
-  //     '/events/gallery/county-1.jpg',
-  //     '/events/gallery/county-2.jpg',
-  //     '/events/gallery/county-3.jpg',
-  //     '/events/gallery/county-4.jpg',
-  //     '/events/gallery/county-5.jpg',
-  //     '/events/gallery/county-6.jpg'
-  //   ]
-  // },
   // {
   //   slug: 'taste-of-india-gala-dinner',
   //   images: [
