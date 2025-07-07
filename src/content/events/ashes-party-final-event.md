@@ -11,7 +11,7 @@ email: 'me@lucydonovan.com'
 
 Join us in the company of the Surrey first team squad and other cricket legends at the Oval for the Ashes Party and Grand Finale Dinner to celebrate the closing of Rory’s testimonial year.
 
-We will have a night packed with fun, including a three-course dinner, a Q&A with ex England internationals, a live auction with money can’t buy lots, followed by a live DJ and dancing.
+We will have a night packed with fun, including a three-course dinner, a live auction with money can’t buy lots, followed by a live DJ and dancing.
 
 For the energetic cricket fans, the party will continue from 11.30pm at the famous Beehive pub next to the Oval to watch the Ashes test match from Adelaide.
 
