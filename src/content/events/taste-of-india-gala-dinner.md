@@ -1,5 +1,5 @@
 ---
-image: '/events/dinner-1.jpg'
+image: '/events/dinner-2.jpg'
 title: 'Taste of India Gala Black Tie Dinner '
 start_date: '2025-06-19'
 end_date: ''
