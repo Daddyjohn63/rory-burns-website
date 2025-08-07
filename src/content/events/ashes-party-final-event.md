@@ -15,6 +15,6 @@ We will have a night packed with fun, including a three-course dinner, a live au
 
 For the energetic cricket fans, the party will continue from 11.30pm at the famous Beehive pub next to the Oval to watch the Ashes test match from Adelaide.
 
-Ticket prices will be announced shortly.
+Ticket prices from £120 per person.
 
 For any enquires, contact Lucy at me@lucydonovan.com
