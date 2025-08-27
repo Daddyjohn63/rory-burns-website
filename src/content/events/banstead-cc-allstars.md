@@ -9,7 +9,7 @@ link: ''
 email: ''
 ---
 
-he Rory Burns Testimonial Day at Banstead Cricket Club on August 20 saw a great turnout in the marquee and around the ground.
+The Rory Burns Testimonial Day at Banstead Cricket Club on August 20 saw a great turnout in the marquee and around the ground.
 
 Rory and his team-mates held a training session with more than 30 of the club juniors before a fundraising lunch. Former England star, Ed Giddins, hosted 220 people in the marquee for some “heads and tails” fun, with an auction and raffle.
 
