@@ -14,7 +14,8 @@ export async function getEvent(slug: string) {
       description,
       venue,
       link = '',
-      email = ''
+      email = '',
+      videoId = ''
     }
   } = matter(text);
   const body = marked(content);
@@ -29,6 +30,7 @@ export async function getEvent(slug: string) {
     venue: venue as string,
     link: link as string,
     email: email as string,
+    videoId: videoId as string,
     body: body as string
   };
 }
@@ -43,6 +45,7 @@ export type Event = {
   venue: string;
   link: string;
   email: string;
+  videoId: string;
   body: string;
 };
 

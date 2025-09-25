@@ -18,6 +18,7 @@ import {
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { Metadata } from 'next';
+import { YouTubeVideo } from '@/components/events/youtube-video';
 
 export async function generateStaticParams() {
   const slugs = await getEventBySlug();
@@ -75,16 +76,24 @@ export default async function EventPage({
         <InnerHeader title={event.title} description="" />
         <div className="container mx-auto max-w-7xl py-12 mb-16 px-4 sm:px-6 lg:px-8 md:mt-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Image Section */}
+            {/* Image/Video Section */}
             <div className="relative h-[400px] lg:h-[500px] w-full">
-              <Image
-                src={event.image}
-                alt={event.title}
-                sizes="(max-width: 700px) 100vw, 700px"
-                fill
-                className="object-cover rounded-lg"
-                priority
-              />
+              {event.videoId ? (
+                <YouTubeVideo
+                  videoId={event.videoId}
+                  title={event.title}
+                  className="h-full"
+                />
+              ) : (
+                <Image
+                  src={event.image}
+                  alt={event.title}
+                  sizes="(max-width: 700px) 100vw, 700px"
+                  fill
+                  className="object-cover rounded-lg"
+                  priority
+                />
+              )}
             </div>
 
             {/* Content Section */}

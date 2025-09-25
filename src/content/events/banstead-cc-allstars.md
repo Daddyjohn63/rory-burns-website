@@ -3,22 +3,19 @@ image: '/events/banstead.jpg'
 title: 'Banstead T20, Surrey XI v Banstead Allstars '
 start_date: '2025-08-20'
 end_date: ''
-description: '2025 Banstead CC is hosting a coaching day for juniors and a special T20 match as part of the Rory Burns Testimonial year... '
+description: 'This event has passed, but you can read a summary of the event.... '
 venue: 'Banstead CC'
 link: ''
-email: 'katehammond1@hotmail.co.uk'
+email: ''
+videoId: 'LvMh7KkA1s4?si=rRlTS5nc0tIAHUgr'
 ---
 
-On 20 August 2025 Banstead CC is hosting a coaching day for juniors and a special T20 match as part of the Rory Burns Testimonial year. Rory started his career at Banstead, so this is a special day for him and the club.
+The Rory Burns Testimonial Day at Banstead Cricket Club on August 20 saw a great turnout in the marquee and around the ground.
 
-The day starts at 12 midday with a coaching session for the U11s, followed by an U12 and above coaching session at 1pm, and a simultaneous U11 softball competition at 1pm.
+Rory and his team-mates held a training session with more than 30 of the club juniors before a fundraising lunch. Former England star, Ed Giddins, hosted 220 people in the marquee for some “heads and tails” fun, with an auction and raffle.
 
-The Marquee Bar opens at 12.30pm, followed by an informal fundraising curry lunch from 1.30pm, fun games, an auction, and a Q&A with Rory at 2.30pm. Starting at 4.30pm there will be a Banstead Allstars v Surrey Allstars T20 match, commentated by Mark Church.
+The marquee crowd was then entertained by a video starring Rory's Dad, Chris, and brother Liam, who talked about how Rory got into cricket, their proudest Rory moments on the field and his various haircuts through the years! After that BBC commentator Mark Church interviewed Rory about some of his career highlights so far.
 
-Tickets for the coaching sessions – currently only available to Banstead CC juniors - cost £25. That includes a coaching session attended by a Surrey CCC player, an autographed bat, a place in the guard of honour and a food truck voucher. Testimonial year merchandise will be on sale throughout the day.
+In the match after lunch Surrey batted first, with Rory scoring 31 at the top of the order. Oval Invincibles star Jordan Clarke was top scorer, with 39, in Surrey's 202 for 8. Banstead were not helped by three of their 1st team regulars playing for Surrey. Banstead’s reply was helped by Rory opening the batting for them as well! His quick 33 got Banstead to 42, but they ultimately fell 12 runs short of the target. Jordan Clarke again proved his star quality, with four wickets for just 24 runs, while England U19 and Banstead player Ralphie Albert picked up two for 10.
 
-The address of the venue is Banstead CC, Avenue Road, Banstead SM7 2PP. Tickets for the fundraising lunch are on sale from April 21 for Banstead CC members, and from May 5 for the wider Surrey cricket community. They cost £65/head through Ticket Tailor.
-
-There are also premium tables costing £100 per guest (10 places per table) that give the opportunity to be joined by a Surrey CCC player. Players already confirmed are Dom Sibley, Ryan Patel and Matt Spreigel.
-
-For any enquires, contact katehammond1@hotmail.co.uk
+A massive thank you to the organisation committee, bar staff, caterers and all the volunteers who helped organise the day. And a special thank you to the Club's events manager, Kate Hammond, who dedicated a huge amount of her time and energy to this successful and very enjoyable day.
