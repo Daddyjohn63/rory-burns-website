@@ -24,6 +24,14 @@ export const eventData: EventGallery[] = [
       '/events/gallery/county-championship/surrey-yorkshire-2.jpg',
       '/events/gallery/county-championship/surrey-yorkshire-3.jpg'
     ]
+  },
+  {
+    slug: 'rory-burns-testimonial-golf-day',
+    images: [
+      '/events/gallery/golf-day/golf-1.jpg',
+      '/events/gallery/golf-day/golf-2.jpg',
+      '/events/gallery/golf-day/golf-3.jpg'
+    ]
   }
   // {
   //   slug: 'taste-of-india-gala-dinner',
