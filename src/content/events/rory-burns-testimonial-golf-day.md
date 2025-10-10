@@ -1,5 +1,5 @@
 ---
-image: '/events/golf.jpg'
+image: '/events/gallery/golf-day/golf-2.jpg'
 title: 'Testimonial Golf Day'
 start_date: '2025-10-01'
 end_date: ''

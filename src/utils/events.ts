@@ -42,7 +42,7 @@ export const events = [
     id: 5,
     title: 'Golf Day ',
     description: '20 x 4 Balls (3 guests plus Surrey CCC staff)',
-    image: '/images/events/event-5.jpg',
+    image: '/events/gallery/golf-day/golf-2.jpg',
     date: '1st October',
     location: 'Foxhills',
     link: '/events/event-5'

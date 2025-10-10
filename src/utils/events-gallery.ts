@@ -29,7 +29,7 @@ export const eventData: EventGallery[] = [
     slug: 'rory-burns-testimonial-golf-day',
     images: [
       '/events/gallery/golf-day/golf-1.jpg',
-      '/events/gallery/golf-day/golf-2.jpg',
+      '/events/gallery/golf-day/golf-4.jpg',
       '/events/gallery/golf-day/golf-3.jpg'
     ]
   }
