@@ -43,10 +43,10 @@ export const Footer = () => {
               Website by{' '}
               <Link
                 target="_blank"
-                href="https://webandprosper.co.uk"
+                href="https://johnpaulweb.dev"
                 className="hover:text-[#9C8561]"
               >
-                Web and Prosper
+                John Paul
               </Link>
             </p>
           </div>
